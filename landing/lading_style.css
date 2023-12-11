@@ -1,0 +1,86 @@
+:root {
+    --color_1: #f43c6e;
+    --color_2: #7ec4ff;
+    --color_3: #408dff;
+    --color_4: #154aaa;
+    --color_5: #4cc2c4;
+    --color_6: #ffff;
+
+    --font_master: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    font-family: var(--font_master);
+}
+
+.main_container {
+    height: 100vh;
+    width: 100vw;
+    background-color: var(--color_1);
+    display: flex;
+    flex-direction: row;
+}
+
+.main_container .landing_description {
+    flex: 2;
+    background-color: var(--color_2);
+}
+
+.main_container .landing_graphics {
+    flex: 1;
+    background-color: var(--color_3);
+}
+
+.company_name{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.main_container .landing_description .description_text .subtitle {
+    /* TODO: add font and fontsize */
+    margin-top: 10%;
+    margin-left: 50%;
+    text-align: center;
+    transform: translateX(-50%);
+}
+
+.main_container .landing_description .description_text .welcome_message {
+    /* TODO: add font and fontsize */
+    margin-top: 10%;
+    margin-left: 50%;
+    text-align: center;
+    transform: translateX(-50%);
+}
+
+.main_container .landing_description .description_buttons {
+    margin-top: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.login_button, .signup_button{
+    border-width: 0;
+    border-radius: 5px;
+    font-size: 2rem;
+    padding: 1%;
+}
+
+.login_button {
+    color: var(--color_6);
+    background-color: var(--color_3);
+
+    margin-right: 5%;
+}
+
+.signup_button {
+    color: var(--color_3);
+    
+    border-width: 2px;
+    border-style: solid;
+    border-color: var(--color_3);
+}
