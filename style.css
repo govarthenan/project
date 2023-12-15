@@ -11,7 +11,7 @@
   --color_10: #9370db;
 
   --font_master: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
-
+  --font_company_name: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
   --opacity_1: 0.2;
 }
 
@@ -23,6 +23,7 @@ body {
   display: flex;
   font-family: var(--font_master);
 }
+
 .container {
   display: flex;
 }
@@ -36,18 +37,21 @@ body {
   display: flex;
   flex-direction: column;
 }
+
 .navi-item {
   padding: 0.1rem 0px 0.1rem 0px;
   display: block;
   color: var(--color_6);
   font-weight: bold;
 }
+
 .navi-item:hover {
   background-color: var(--color_5);
   text-decoration: none;
   border-radius: 5px;
   cursor: pointer;
 }
+
 .navi-item:current {
   background-color: var(--color_1);
 }
@@ -58,7 +62,7 @@ body {
 
 .company_name {
   margin-left: 6%;
-  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  font-family: var(--font_company_name);
   color: var(--color_5);
   font-size: 2rem;
 }
