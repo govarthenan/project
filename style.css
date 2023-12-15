@@ -11,7 +11,7 @@
   --color_10: #9370db;
 
   --font_master: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
-
+  --font_company_name : Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
   --opacity_1: 0.2;
 }
 
@@ -58,7 +58,7 @@ body {
 
 .company_name {
   margin-left: 6%;
-  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  font-family: var(--font_company_name);
   color: var(--color_5);
   font-size: 2rem;
 }
