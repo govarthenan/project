@@ -9,9 +9,10 @@
   --color_8: #abb8c3;
   --color_9: #073907;
   --color_10: #9370db;
+  --color_11: #e3edf6;
 
   --font_master: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
-  --font_company_name : Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  --font_company_name: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
   --opacity_1: 0.2;
 }
 
@@ -27,8 +28,10 @@ body {
   display: flex;
 }
 
+/*side bar*/
+
 .sidebar {
-  width: 250px;
+  flex: 1;
   background-color: var(--color_7);
   color: var(--color_6);
   padding: 20px;
@@ -36,12 +39,24 @@ body {
   display: flex;
   flex-direction: column;
 }
+
+.sidebar-title {
+  font-size: 1.3em;
+  margin-left: 5%;
+  display: flex;
+}
+
 .navi-item {
-  padding: 0.1rem 0px 0.1rem 0px;
+  padding: 1rem 0.5rem 1rem 0.5rem;
   display: block;
   color: var(--color_6);
   font-weight: bold;
+  margin-top: 5%;
+  display: flex;
+  align-items: center;
+  margin-left: 3%;
 }
+
 .navi-item:hover {
   background-color: var(--color_5);
   text-decoration: none;
@@ -68,6 +83,7 @@ body {
   font-family: var(--font_master);
   color: var(--color_5);
   font-size: 1.4rem;
+  font-style: bold;
 }
 
 .dropup {
@@ -94,6 +110,7 @@ body {
   text-decoration: none;
   display: block;
   color: var(--color_6);
+  font-size: 1.2rem;
 }
 
 .dropup-item:hover {
@@ -104,9 +121,11 @@ body {
 /* main content part */
 
 .main-content {
-  flex: 1;
+  flex: 5;
   background-color: rgba(171, 184, 195, 0.4);
 }
+
+/*announcement part*/
 
 .announcment {
   margin: 3% 4%;
@@ -144,12 +163,14 @@ body {
   flex: 1;
   margin: 2%;
   padding: 2% 0;
-  background-color: var(--color_6);
+  background-color: var(--color_11);
   border: 2px;
   border-radius: 5px;
-  border-style: solid;
   transition: transform 0.2s ease-in-out;
+  border-top: 5px solid var(--color_4);
 }
+
+/*dashboard*/
 
 .dashboard-container,
 .announcment-container {
@@ -177,9 +198,12 @@ body {
   transition: transform 0.2s ease-in-out;
 }
 
-.complaints_img {
-  width: 5%;
-  margin-left: 10%;
+.complaints_img,
+.amenities_img,
+.issues_img,
+.payment_img {
+  width: 7%;
+  margin-left: 30%;
 }
 
 .dashboard-tile1,
@@ -198,21 +222,29 @@ body {
 
 .dashboard-tile1 {
   border-top: 5px solid var(--color_1);
+  display: flex;
+  align-items: center;
 }
 
 .dashboard-tile2 {
   border-top: 5px solid var(--color_9);
+  display: flex;
+  align-items: center;
 }
 
 .dashboard-tile3 {
   border-top: 5px solid var(--color_10);
+  display: flex;
+  align-items: center;
 }
 
 .dashboard-tile4 {
   border-top: 5px solid var(--color_4);
+  display: flex;
+  align-items: center;
 }
 
 .tile-header {
-  font-size: 1.2em;
+  font-size: 1.3em;
   margin-left: 3%;
 }
