@@ -24,6 +24,7 @@ body {
   display: flex;
   font-family: var(--font_master);
 }
+
 .container {
   display: flex;
 }
@@ -39,13 +40,6 @@ body {
   display: flex;
   flex-direction: column;
 }
-
-.sidebar-title {
-  font-size: 1.3em;
-  margin-left: 5%;
-  display: flex;
-}
-
 .navi-item {
   padding: 1rem 0.5rem 1rem 0.5rem;
   display: block;
@@ -63,6 +57,7 @@ body {
   border-radius: 5px;
   cursor: pointer;
 }
+
 .navi-item:current {
   background-color: var(--color_1);
 }
