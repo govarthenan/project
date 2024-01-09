@@ -795,3 +795,161 @@ input[type="file"] {
     border-color: var(--color_1);
     color: var(--color_1); 
   }
+
+  /* issue*/
+
+  .issue-landing{
+    height: 90%;
+    width: 96%;
+    background-color: var(--color_6);
+    margin:2% 3%;
+    padding: 1%;
+    }
+   
+
+  .issue-column{
+    margin: 2% 2% 2% 2%;
+  }
+  
+  .issue-type,.issue-log-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr; 
+    grid-gap: 1%; 
+    background-color: var(--color_6);
+  }
+  
+  .issue-log-content{
+    background-color: var(--color_6);
+    grid-template-columns: 1.5fr 1.5fr 1.2fr  5fr 1.5fr;
+  }
+  .issue-log,.new-issue {
+    padding: 3%;
+    border-color: var(--color_4);
+    border-width: 2px; 
+  }
+  
+  
+  .issue-log{
+    border-right: 2px solid var(--color_4);
+    box-shadow: 0 8px 16px rgba(7, 7, 85, 0.1);
+    margin: 1.5%;
+  }
+  .new-issue{
+    
+    margin: 1.5%;
+    opacity: var(--opacity_1);
+    box-shadow: 0 8px 16px rgba(7, 7, 85, 0.1);
+   
+  }
+  .issue-log-content {
+    padding: 2%;
+    border-radius: 5px;
+    border-color: var(--color_4);
+    border-width: 1px;
+    border-style: solid;
+    margin-top: 1%;
+    cursor: pointer;
+  }
+  
+  .issue-type-title{
+    font-size: 1.2rem;
+    color: var(--color_4);
+    margin-left: 3%;
+    font-weight: bold;
+  }
+  
+  .select-complaint-img{
+    height: 80%;
+    margin-left: 3%;
+    
+  }
+  
+  .new-complaint-img{
+    height: 80%;
+    margin-left: 3%;
+  }
+  
+  .file-column,.description-column,.id-column,.date-column{
+    border-right: 2px solid var(--color_4);
+    
+  }
+  
+  .file-image{
+    height: 70%;
+    width:40%;
+    margin-left: 20%;
+  }
+  
+  .issue-type-heading{
+    margin: 1% 0%;
+  }
+  
+  .issue-id-heading{
+    margin: 8% 0%;
+  }
+  
+  .issue-date-heading{
+    margin: 6% 0%;
+  }
+  
+  .issue-file-heading{
+    margin: 6% 0% 0%;
+  }
+  .issue-id{
+    margin-top: 5%;
+  }
+  
+  .issue-description{
+    margin: 1% 0%;
+  }
+  
+  .issue-status-heading{
+    margin: 2% 0% 0%; 
+  }
+  .issue-date{
+    margin: 10%;
+  }
+  
+  .status-inprogress{
+    padding: 3% 0%;
+    background-color: var(--color_2);
+    text-align: center;
+    margin-left: 13%;
+    border-radius: 5px;
+  }
+  
+  .status-completed{
+    padding: 3% 0%;
+    text-align: center;
+    margin-left: 13%;
+    background-color: var(--color_5);
+    border-radius: 5px;
+  }
+  
+  
+  .new-issue:hover{
+    margin: 1.5%;
+    box-shadow: 0 8px 16px rgba(7, 7, 85, 0.4);
+    cursor: pointer;
+    opacity: 100%;
+   
+  }
+  
+  .isssue-log:hover{
+    box-shadow: 0 8px 16px rgba(7, 7, 85, 0.4);
+    cursor: pointer;
+  }
+  
+  
+  .issue-type-title:hover{
+    font-size: 1.4rem;
+    color: var(--color_7);
+    margin-left: 3%;
+    color: var(--color_4);
+  }
+  
+  .issue-log-content:hover{
+    cursor: pointer;
+    box-shadow: 0 8px 16px rgba(7, 7, 85, 0.4);
+    translate: 1%;
+  }
