@@ -1,7 +1,5 @@
 <?php
-// Your PHP code here (if needed)
 
-// For example:
 
 ?>
 
