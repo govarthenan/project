@@ -139,6 +139,9 @@ margin: 7% 45%;
   cursor: pointer;
 }
 
+.sidebar_office_building{
+  height:10%;
+}
 /* main content part */
 
 .main-content {
@@ -323,22 +326,7 @@ flex:1;
 
  /*complaints*/
 
- .complaint {
-  display: grid;
-  grid-template-columns: 3fr 2fr; 
-  height: 100vh; 
-  flex: 1;
-}
 
-.complaint-column {
-  padding: 1%;
-  
-}
-
-.complaint-column{
-  background-color: var(--color_6);
-  margin: 3% 2% 3% 5%;
-}
 .complaint-type,.complaint-log-content {
   display: grid;
   grid-template-columns: 1fr 1fr; 
@@ -348,13 +336,14 @@ flex:1;
 
 .complaint-log-content{
   background-color: var(--color_6);
-  grid-template-columns: 1fr 5fr 2fr;
+  grid-template-columns: 1.5fr 1.5fr 1.2fr  5fr 1.5fr;
 }
 .complaint-log,.new-complaint {
-  padding: 6%;
+  padding: 3%;
   border-color: var(--color_4);
   border-width: 2px; 
 }
+
 
 .complaint-log{
   border-right: 2px solid var(--color_4);
@@ -369,7 +358,7 @@ flex:1;
  
 }
 .complaint-log-content {
-  padding: 5%;
+  padding: 2%;
   border-radius: 5px;
   border-color: var(--color_4);
   border-width: 1px;
@@ -396,22 +385,45 @@ flex:1;
   margin-left: 3%;
 }
 
-.file-column,.description-column{
+.file-column,.description-column,.id-column,.date-column{
   border-right: 2px solid var(--color_4);
   
 }
 
 .file-image{
-  height: 100%;
+  height: 70%;
   width:40%;
+  margin-left: 20%;
 }
 
 .complaint-type-heading{
-  margin: 2% 0%;
+  margin: 1% 0%;
+}
+
+.complaint-id-heading{
+  margin: 8% 0%;
+}
+
+.complaint-date-heading{
+  margin: 6% 0%;
+}
+
+.complaint-file-heading{
+  margin: 6% 0% 0%;
+}
+.complaint-id{
+  margin-top: 5%;
 }
 
 .complaint-description{
   margin: 1% 0%;
+}
+
+.complaint-status-heading{
+  margin: 2% 0% 0%; 
+}
+.complaint-date{
+  margin: 10%;
 }
 
 .status-inprogress{
@@ -429,12 +441,7 @@ flex:1;
   background-color: var(--color_5);
   border-radius: 5px;
 }
-.complaint-landing-image{
-  height:40%;
-  width: 97%;
-  margin-right: 0%;
-  margin-top: 65%;
-}
+
 
 .new-complaint:hover{
   margin: 1.5%;
@@ -468,7 +475,7 @@ flex:1;
 
 
 .new-complaint-landing{
-height: 93%;
+height: 94%;
 width: 98%;
 background-color: var(--color_6);
 margin:2% 3%;

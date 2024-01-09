@@ -28,12 +28,12 @@ body {
 }
 
 .main_container .landing_description {
-    flex: 2;
+    flex: 3;
     background-color: var(--color_7);
 }
 
 .main_container .landing_graphics {
-    flex: 1;
+    flex: 2;
     background-color: var(--color_7);
 }
 
@@ -74,7 +74,7 @@ body {
 .signup_button {
     border-width: 0;
     border-radius: 5px;
-    font-size: 2rem;
+    font-size: 1.5rem;
     padding: 1%;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     transition: background-color 0.3s, color 0.3s;
@@ -83,33 +83,35 @@ body {
 
 .login_button {
     color: var(--color_6);
-    background-color: var(--color_1);
+    background-color: var(--color_5);
     border-color: var(--color_6);
     margin-right: 5%;
     border-width: 2px;
 }
 
 .signup_button {
-    color: var(--color_1);
+    color: var(--color_5);
 
     border-width: 2px;
     border-style: solid;
-    border-color: var(--color_1);
+    border-color: var(--color_5);
 }
 
 .login_button:hover {
     background-color: var(--color_6);
-    color: var(--color_1);
-    border-color: var(--color_1);
+    color: var(--color_5);
+    border-color: var(--color_5);
 }
 
 .signup_button:hover {
-    background-color: var(--color_1);
+    background-color: var(--color_5);
     color: var(--color_6);
     border-color: var(--color_6);
 }
 
 .landing_img {
-    margin-top: 20%;
-    margin-right: 10%;
+    
+    width: 90%;
+    height: 80%;
+    margin-top: 10%;
 }
