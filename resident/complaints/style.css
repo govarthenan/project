@@ -953,3 +953,55 @@ input[type="file"] {
     box-shadow: 0 8px 16px rgba(7, 7, 85, 0.4);
     translate: 1%;
   }
+
+  /*new issue*/
+
+
+.new-issue-landing{
+  height: 94%;
+  width: 98%;
+  background-color: var(--color_6);
+  margin:2% 3%;
+  }
+  
+  .issue-column-new{
+    
+    margin: 2% 2% 2% 2%;
+  }
+  
+  .new-issue-log,.new-issue-new {
+    padding: 4%;
+    border-color: var(--color_4);
+    border-width: 2px; 
+  }
+  
+  .new-issue-log{
+   
+    box-shadow: 0 8px 16px rgba(7, 7, 85, 0.1);
+    margin: 1.5%;
+    opacity: var(--opacity_1);
+  }
+  
+  .new-issue-new{
+    margin: 1.5%;
+    box-shadow: 0 8px 16px rgba(7, 7, 85, 0.1);
+   
+  }
+  
+  .new-issue-new:hover{
+    margin: 1.5%;
+    box-shadow: 0 8px 16px rgba(7, 7, 85, 0.4);
+    cursor: pointer;
+  }
+  
+  .new-issue-log:hover{
+    box-shadow: 0 8px 16px rgba(7, 7, 85, 0.4);
+    cursor: pointer;
+    opacity: 100%;
+  }
+  
+  .new-issue-container {
+    display: grid;
+    grid-template-columns: 2fr 10fr; 
+    height: 75vh; 
+  }
