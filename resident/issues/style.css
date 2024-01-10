@@ -1007,4 +1007,110 @@ input[type="file"] {
     height: 75vh; 
   }
   
+
+  
+  /*amenities*/
+
+  
+.amenity{
+  display: grid;
+  grid-template-rows: 2.5fr 1fr; 
+  flex: 1;
+  
+}
+
+.container-amenity-details {
+  display: grid;
+  grid-template-columns: 1.5fr 1.6fr 1fr; 
+}
+
+.up-coming-booikng{
+ background-color: var(--color_6);
+ margin: 5.5% 14% 4% 7%;
+ 
+}
+
+.booking-history{
+  background-color: var(--color_6);
+  margin: 5.3% 20% 4% -10%;
+  overflow: auto;
+}
+
+.booking-calendar{
+ background-color: var(--color_6);
+ margin: 7.9% 9% 7% -26%;
+}
+
+.container-amenity-tiles{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr; 
+}
+.pool-container,.fitness-center-container,.common-area-container{
+  margin: 2.5% 7% ;
+  background-color: var(--color_7);
+  border-color: var(--color_6);
+  border-style: solid;
+  border-width: 1rem;
+  box-shadow: 0 8px 16px rgba(7, 7, 85, 0.7);
+}
+
+.amenity-heading{
+  color: var(--color_6);
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-top: 10%;
+  text-transform: capitalize;
+}
+.pool-image,.gym-image,.common-image{
+  width: 40%;
+  height: 55%;
+  margin-top: 5%;
+  margin-left: 30%; 
+}
+
+.up-coming-booikng-heading{
+  margin: 3% 0% 0% 5%;
+}
+
+.booking-tiles{
+  background-color:var(--color_6);
+  box-shadow: 0 8px 16px rgba(7, 7, 85, 0.2);
+  padding: 2%;
+  margin: 2% 3%;
+  border-radius: 5px;
+  display: grid;
+  grid-template-columns: 1.3fr 1.2fr 1.5fr;
+}
+
+.booking-date,.booking-time{
+  border-right:solid  var(--color_4); 
+}
+
+.booking-date,.booking-time,.booking-type{
+  margin-left: 3%;
+  padding: 8%;
+}
+
+.booking-tiles-history{
+  background-color:var(--color_6);
+  box-shadow: 0 8px 16px rgba(7, 7, 85, 0.2);
+  padding: 0%;
+  margin: 2% 3%;
+  border-radius: 5px;
+  display: grid;
+  grid-template-columns: 1fr 0.7fr 1.1fr 1fr;
+  overflow: auto;
+  align-items: center;
+}
+
+.booking-date-history,.booking-time-history,.booking-type-history,.booking-status{
+  margin-left: 3%;
+  padding: 1%;
+}
+
+.booking-date-history,.booking-time-history,.booking-type-history{
+  border-right:solid  var(--color_4);  
+}
+
   

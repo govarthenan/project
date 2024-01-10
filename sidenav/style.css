@@ -1092,11 +1092,11 @@ input[type="file"] {
 .booking-tiles-history{
   background-color:var(--color_6);
   box-shadow: 0 8px 16px rgba(7, 7, 85, 0.2);
-  padding: 1%;
+  padding: 0%;
   margin: 2% 3%;
   border-radius: 5px;
   display: grid;
-  grid-template-columns: 1fr 0.7fr 1fr 1fr;
+  grid-template-columns: 1fr 0.7fr 1.1fr 1fr;
   overflow: auto;
 }
 
