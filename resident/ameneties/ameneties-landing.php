@@ -15,8 +15,11 @@ include('sidenav.php');
       
         <div class="container-amenity-details">
           <div class="up-coming-booikng">
-            <h3 class="up-coming-booikng-heading">Up Coming Bookings</h3>
-            <hr>
+            <div class="up-coming-booking-heading">
+              <img src="up_coming_booking.svg" class="up-coming-booking-img" />
+              <span class="up-coming-booking-title">Up Coming Booking</span>
+            </div>
+           <hr>
             <div class="booking-tiles">
               <div class="booking-date"> 2024/01/20</div>
               <div class="booking-time"> 8.00 a.m</div>
@@ -40,8 +43,12 @@ include('sidenav.php');
           </div>
 
           <div class="booking-history">
-            <h3 class="up-coming-booikng-heading">Booking History</h3>
-            <hr>
+            <div class="booking-history-heading">
+              <img src="booking-history.svg" class="booking-history-img" />
+              <span class="booking-history-title">Booking History</span>
+           </div>
+           <hr>
+              
             <div class="booking-tiles-history">
               <div class="booking-date-history"> 2024/01/20</div>
               <div class="booking-time-history"> 8.00 a.m</div>
@@ -78,7 +85,10 @@ include('sidenav.php');
           </div>
 
           <div class="booking-calendar">
-          <h3 class="up-coming-booikng-heading">Booking calendar</h3>
+          <div class="booking-calendar-heading">
+              <img src="booking_calendar.svg" class="booking-calendar-img" />
+              <span class="booking-calendar-title">Booking Calendar</span>
+            </div>
             <hr>
           </div>
 

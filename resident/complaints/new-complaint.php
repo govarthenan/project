@@ -51,8 +51,7 @@ include('sidenav.php');
             <option value="item2">Security</option>
             <option value="item3">Finance</option>
             <option value="item3">Other</option>
-            <!-- Add more options as needed -->
-        </select>
+         </select>
                 </div>
                 <div class="form-column">
                 <input type="text" id="shortAnswer" name="userShortAnswer" required>
@@ -69,8 +68,8 @@ include('sidenav.php');
                      <input type="file" id="file-input" >
                </div>
                <div class="submit-column">
-               <button class="cancel-btn">Cancel</button>
-               <button class="submit-btn">Submit</button>
+                 <button class="cancel-btn">Cancel</button>
+                 <button class="submit-btn">Submit</button>
     
                 </div>
                </div>

@@ -552,12 +552,6 @@ textarea{
   width: 90%;
 }
 
-textarea{
-  background-color:var(--form_color);
-  padding: 1% 5%;
-  border: none;
-  width: 90%;
-}
 
 input{
   background-color:var(--form_color);
@@ -612,7 +606,7 @@ input[type="file"] {
   margin-left: 3%;
 }
 
-.cancel-btn, .submit-btn,.edit-btn,.delete-btn {
+.cancel-btn, .submit-btn,.edit-btn,.delete-btn,.cancel-btn-amenity,.submit-btn-amenity {
   padding: 1% 2%;
   cursor: pointer;
   border: solid;
@@ -1108,4 +1102,177 @@ input[type="file"] {
 
 .booking-date-history,.booking-time-history,.booking-type-history{
   border-right:solid  var(--color_4);  
+}
+
+.booking-history-heading{
+  display: flex;
+}
+
+.booking-history-img,.up-coming-booking-img{
+  width: 5%;
+  height: 5%;
+  margin: 2% 2% 0% 5%;
+}
+
+.up-coming-booking-img{
+  width: 6%;
+  height: 5%;
+  margin: 2% 2% 0% 5%;
+}
+
+.booking-calendar-img{
+  width: 6%;
+  height: 5%;
+  margin: 2% 2% 0% 5%;
+}
+
+.booking-history-title,.up-coming-booking-title,.booking-calendar-title{
+  font-size: 1.3rem;
+  font-weight: bold;
+  color: var(--color_4);
+  margin-top: 2%;
+  
+}
+
+/*booking interface*/
+
+.booking-container{
+  background-color: var(--color_6);
+  height: 92%;
+  width: 94%;
+  margin: 2% 4%;
+ 
+}
+
+.appointment-heading-container{
+display: flex;
+padding: 1% 2%;
+}
+
+.appoinment-image{
+margin-right: 2%;
+width: 3%;
+margin-top: 0.5%;
+height: 5%;
+}
+
+.appointment-heading{
+font-size: 1.3rem;
+font-weight: bold;
+color: var(--color_4);
+margin-top: 1%;
+
+}
+
+.input-container{
+  display: grid;
+  grid-template-rows: 1fr 2fr 5fr;
+}
+
+.form-date{
+  background-color: var(--color_11);
+  display: grid;
+  padding: 1% ;
+  margin: 0% 2%;
+}
+
+.date{
+  display: grid;
+  grid-template-columns:0.5fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 0.5fr;
+  padding: 1%;
+}
+
+.date-name{
+  background-color: var(--color_6);
+  margin: 7% 15%;
+  text-align: center;
+  padding: 3% 3%;
+  border:solid var(--color_2);
+  border-width: 1px;
+}
+
+.date-name-arrow{
+  margin: 30% 25%; 
+  background-color: var(--color_6);
+  border:solid var(--color_2);
+  border-width: 1px;
+  padding: 1%;
+}
+.form-time{
+  margin-top: 0.2%;
+  background-color: var(--color_11);
+  padding: 1%;
+  margin: 0% 2%;
+}
+.time{
+  display: grid;
+  grid-template-columns: 0.9fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr ;
+  padding: 1%;
+}
+.time-name{
+  background-color: var(--color_6);
+  margin: 7% 12%;
+  text-align: center;
+  padding: 1% 1%;
+  border:solid var(--color_2);
+  border-width: 1px;
+}
+.form-date-heading,.form-time-heading,.form-type-heading{
+  border-bottom:solid var(--color_6);
+  display: flex;
+}
+
+.booking-submit{
+  background-color: var(--color_11); 
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  margin: 0% 2%;
+  padding: 2%;
+}
+
+.date-of-slot,.time-of-slot,.no-of-people{
+  color: var(--color_4);
+  font-size: 1.2rem;
+  margin-left: 3%;
+  font-weight: bold;
+  margin-right: 1%;
+  padding: 0.5%;
+}
+
+.no-of-people{
+  padding: 1.5%;
+}
+#people-no{
+  background-color: var(--color_6);
+}
+
+.cancel-btn-amenity{
+  margin-left: 70%;
+  background-color: var(--color_6);
+  border-color: var(--color_4);
+  color: var(--color_4);
+}
+
+.submit-btn-amenity{
+ margin-left: 1%;
+  background-color: var(--color_7);
+  color: var(--color_6);
+  border-color: var(--color_7);
+}
+.cancel-btn-amenity:hover{
+  background-color: var(--color_7);
+  border-color: var(--color_7);
+  color: var(--color_6);
+}
+
+.submit-btn-amenity:hover{
+  background-color: var(--color_6);
+  border-color: var(--color_4);
+  color: var(--color_4); 
+}
+
+.submit-column-amenity{
+  background-color: var(--color_11);
+  margin: 0% 2%;
+  padding: 1%;
 }
