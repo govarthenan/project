@@ -14,7 +14,7 @@ include('sidenav.php');
       <div class="booking-container">
         <div class="appointment-heading-container">
           <img src="appoinment_img.svg" class="appoinment-image">
-          <span class="appointment-heading">Book appointment</span>
+          <span class="appointment-heading">Book Your Slot</span>
         </div>
         <hr>
         <div class="form-date">

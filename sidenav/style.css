@@ -1280,3 +1280,37 @@ margin-top: 1%;
   margin: 0% 2%;
   padding: 1%;
 }
+
+
+.time-name:hover{
+  background-color: var(--color_7);
+  border:solid var(--color_2);
+  color: var(--color_6);
+}
+
+.date-name:hover{
+  background-color: var(--color_7);
+  border:solid var(--color_2);
+  color: var(--color_6);
+}
+
+/*common area booking*/
+
+.time-for-slot{
+  color: var(--color_4);
+  font-size: 1.2rem;
+  margin-left: 3%;
+  font-weight: bold;
+  margin-right: 5%;
+  padding: 0.5%;
+}
+#time-needed{
+  margin-left: 40.5%;
+  background-color: var(--color_6);
+  width:48%;
+}
+
+.form-date-heading-common area{
+  border-bottom:solid var(--color_6);
+  display: flex;
+}
