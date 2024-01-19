@@ -1320,4 +1320,31 @@ margin-top: 1%;
   display: flex;
 }
 
+/*amenity view*/
+
+.form-column-view-time{
+  padding: 1%;  
+  margin-top: 5%;
+  margin-left: 2%;
+}
+
+.form-column-no-of-people{
+    margin-top: 10%;
+    margin-left: 2%;
+}
+.form-column-view-amenity{
+  padding:0% 2%;  
+  margin:2% 3% 1%;
+}
+
+.form-column-view-amenity-type{
+  padding:0% 2%;  
+  margin:10% 3%;
+}
+
+.form-column-view-date{
+  padding: 1%;  
+  margin: 2%;
+}
+
 /*payment*/

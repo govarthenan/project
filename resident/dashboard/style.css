@@ -940,6 +940,7 @@ input[type="file"] {
     cursor: pointer;
   }
   
+  
   .issue-type-title:hover{
     font-size: 1.4rem;
     color: var(--color_7);
@@ -1280,110 +1281,36 @@ margin-top: 1%;
   padding: 1%;
 }
 
-/*amenity view*/
 
-.form-column-view-time{
-  padding: 1%;  
- margin-top: 10%;
-  margin-left: 10%;
-}
-
-.form-column-no-of-people{
-    margin-top: 20%;
-    margin-left: 10%;
+.time-name:hover{
+  background-color: var(--color_7);
+  border:solid var(--color_2);
+  color: var(--color_6);
 }
 
-
-.form-column-view-amenity{
-  padding:0% 2%;  
-  margin:2% 3% 1%;
+.date-name:hover{
+  background-color: var(--color_7);
+  border:solid var(--color_2);
+  color: var(--color_6);
 }
 
-.form-column-view-amenity-type{
-  padding:0% 2%;  
-  margin:1% 3%;
-}
+/*common area booking*/
 
-.form-column-view-date{
-  padding: 1%;  
-  margin: 3%;
-}
-/*payment*/
-
-.payment-container{
-  height: 98%;
-  width:99%;
-  flex:1;
-  display:grid;
-  grid-template-rows: 2fr 2fr;
-}
-
-.payment-diagrams{
-  display: grid;
-  grid-template-columns: 2fr 1fr;
-}
-
-.payment-summary-graph{
-  background-color: var(--color_6);
-  margin: 2% 2% 1% 3%;
-}
-
-.payment-calendar{
-  background-color: var(--color_6);
-  margin: 3.7% 7% 2% 1.7%;
-}
-
-.payment-details{
-display: grid;
-grid-template-columns: 2fr 1fr;
-}
-
-.up-coming-payments{
-  background-color: var(--color_6);
-  margin:4% 7% 2% 2%;
-}
-.payment-history{ 
-  background-color: var(--color_6);
-  margin:2% 2% 1% 3%;
-}
-.up-coming-payment-heading{
-  margin: 3% 0% 0% 5%; 
-}
-.up-coming-payment-title{
-  font-size: 1.3rem;
-  font-weight: bold;
+.time-for-slot{
   color: var(--color_4);
-  margin-top: 2%; 
-}
-.payment-date{
-  border-right:solid  var(--color_4); 
-}
-.payment-date,.payment-type{
+  font-size: 1.2rem;
   margin-left: 3%;
-  padding: 8%;
-}
-.payment-tiles{
-  background-color:var(--color_6);
-  box-shadow: 0 8px 16px rgba(7, 7, 85, 0.2);
-  padding: 2%;
-  margin: 2% 3%;
-  border-radius: 5px;
-  display: grid;
-  grid-template-columns: 1.2fr 1.8fr; 
-}
-.payment-history-img{
-  width: 4%;
-  height: 5%;
-  margin: 2% 2% 0% 5%;
-}
-.up-coming-payment-img{
-  width: 8%;
-  height: 5%;
-  margin: 2% 2% 0% 5%;
-}
-.payment-history-title{
-  font-size: 1.3rem;
   font-weight: bold;
-  color: var(--color_4);
-  margin-top: 2%;
+  margin-right: 5%;
+  padding: 0.5%;
+}
+#time-needed{
+  margin-left: 40.5%;
+  background-color: var(--color_6);
+  width:48%;
+}
+
+.form-date-heading-common area{
+  border-bottom:solid var(--color_6);
+  display: flex;
 }
