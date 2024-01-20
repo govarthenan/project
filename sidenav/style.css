@@ -151,177 +151,71 @@ margin: 7% 45%;
   height: 100vh;
 }
 
+/*dashboard*/
 
-/*first column*/
 
-.first-column,.second-column{
-  border-radius: 5px;
-  border-color: var(--color_4);
-  border-width: 2px;
-  height: 97%;  
+.dashboard-container{
+  display: grid;
+  grid-template-rows: 2.2fr 1fr 1.8fr;
+  flex: 1;
 }
 
-.first-column{
-  flex: 3;
-}
-
-.announcment-container {
-  margin: 1.5% 3.5% 0% 3.5%;
-  background-color: var(--color_6);
-  border-radius: 5px;
-  border-color: var(--color_4);
-  border-width: 2px;
-  height: 46%;
-  box-shadow: 0 8px 16px rgba(7, 7, 85, 0.1);
+.first-row{
+ 
+  display: grid;
+  grid-template-columns: 2.8fr 1.2fr;
   
 }
 
-.announcment-title{
-  padding: 2% 0% 0% 4%;
-  border-radius: 5px;
-}
-
-.announcement-tile {
-  border-color: var(--color_4);
-  flex: 1;
-  margin: 2% 3% 2% 3%;
-  padding: 2% 0;
-  background-color: var(--color_11);
-  border-radius: 5px;
-  transition: transform 0.2s ease-in-out;
-  border-style: solid ;
-  border-width: 1px;
-  border-color: var(--color_2);
-}
-
-
-.tile-header {
-  font-size: 1.5rem;
-  padding-left: 3%;
-  
-}
-
-.tile-header1{
-  font-size: 1.3rem;
-  padding-left: 3%;
-}
-.dashboard-container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  border-radius: 5px;
-}
-
-
-.dashboard-tile2,
-.dashboard-tile4 {
-  flex: 1;
-  margin-right: 3.5%;
-  margin-top: 2%;
-  margin-left: 5%;
-  margin-bottom: 1%;
-  padding: 6.4% 0;
+.announcment-container{
   background-color: var(--color_6);
-  border: 2px;
-  border-radius: 5px;
-  transition: transform 0.2s ease-in-out;
-  box-shadow: 0 8px 16px rgba(7, 7, 85, 0.1);
-  border-color: var(--color_4);
-  border-style: solid;
-  display: flex;
-}
-
-.dashboard-tile1,
-.dashboard-tile3{
-  margin-right: 5%;
-  margin-left: 3.5%;
-  margin-bottom: 1%;
-  flex: 1;
-  margin-top: 2%;
-  padding: 6.4% 0;
-  background-color: var(--color_6);
-  border: 2px;
-  border-radius: 5px;
-  transition: transform 0.2s ease-in-out;
-  box-shadow: 0 8px 16px rgba(7, 7, 85, 0.1);
-  border-color: var(--color_4);
-  border-style: solid;
-  display: flex;
-}
-
-
-.complaints_img,
-.amenities_img,
-.issues_img,
-.payment_img {
- width: 7%;
- margin-left: 10%;
-
-}
-
-/*second column*/
-
-.second-column{
-flex:1;
-
+  margin: 1.2%;
 }
 
 .calendar{
-  margin: 5.5% 6% 0% 0%;
-  background-color: var(--color_6);
-  border-radius: 5px;
-  border-color: var(--color_4);
-  border-width: 2px;
-  height: 40%;
-  box-shadow: 0 8px 16px rgba(7, 7, 85, 0.1);
+  background-color: var(--color_7);
+  margin: 3% 4% 3% 1%;
+}
+.second-row{
+  
+  margin: 0.3% 1%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
 }
 
-.calendar-img{
-  height: 80%;
-  margin: 0% 8%;
+.booking-reminder{
+  background-color: var(--color_2);
+  margin-right: 3.5%;
 }
+
+.event-reminder{
+  background-color: var(--color_2);
+  margin-right: 3.5%;
+}
+
+.payment-reminder{
+  background-color: var(--color_2);
+  margin-right: 3.5%;
+}
+
 .private-files{
-  margin: 6% 6% 0% 0%;
-  background-color: var(--color_6);
-  border-radius: 5px;
-  border-color: var(--color_4);
-  border-width: 2px;
-  height: 14%;
-  box-shadow: 0 8px 16px rgba(7, 7, 85, 0.1); 
+  background-color: var(--color_2); 
 }
 
-.manage-documents{
- padding: 2% 3% 2% 2%;
- background-color: var(--color_11);
- margin:0% 3.5% 0% 4% ;
- border-radius: 5px;
- border-style: solid ;
- border-width: 1px;
- border-color: var(--color_2);
-}
-
-.events-name{
+.third-row{
  
-  border-radius: 5px;
-  margin: 3.5% 2% ;
-  padding: 2% 3% 2% 2%;
-  background-color: var(--color_11);
-  border-style: solid ;
-  border-width: 1px;
-  border-color: var(--color_2);
-}
-.second-column-heading{
-  padding: 2% 4% 0% ;
+  margin: 1%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
 }
 
-.Up-comming-events{
-  margin: 6% 6% 0% 0%;
+.maitenance-payment-overview{
   background-color: var(--color_6);
-  border-radius: 5px;
-  border-color: var(--color_4);
-  border-width: 2px;
-  height: 37.5%;
-  box-shadow: 0 8px 16px rgba(7, 7, 85, 0.1);
+  margin-right: 2%;
+}
+
+.utility-useage-overview {
+  background-color: var(--color_6);
 }
 
  /*complaints*/
