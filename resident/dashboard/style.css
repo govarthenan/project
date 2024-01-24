@@ -164,9 +164,53 @@ margin: 7% 45%;
   
 }
 
+/*announcment*/
+
+
 .announcment-container{
   background-color: var(--color_6);
   margin: 1.2%;
+  grid-template-rows: 1fr 6fr;
+  display: grid;
+ 
+}
+
+.announcment-heading{
+  margin-left: 4%;
+  color:var(--color_4);
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-top: 1%;
+}
+
+.announcment-tile-container{
+  grid-template-columns: 1fr 1fr;
+  display: grid;
+  margin:0% 3% 1% ;
+}
+
+.announcment-tile-heading{
+  margin: 4% 4% 0%; 
+  font-size: 1.2rem;text-align: center;
+  font-weight: bold;
+  color:var(--color_4);
+}
+.announcment{
+  font-size: 1.1rem;
+  flex:4; 
+}
+
+.announcment-details{
+  font-size: 1rem;
+  margin: 2% 5% 2%;
+  color:var(--color_7);
+  text-align: justify;
+}
+
+.announcment-1,.announcment-2{
+  margin: 2%;
+  box-shadow: 0px 0px 15px 3px rgba(0, 0, 255, 0.1); 
+  display: flex;
 }
 
 /*calendar*/
@@ -267,12 +311,12 @@ margin: 7% 45%;
 }
 
 .dates div:hover:not(.today){
-  border: 3px solid var(--color_5);
   background-color: var(--color_6);
   color:var(--color_5);
   font-size: 600;
   cursor: pointer;
   -webkit-box-reflect: below 4px linear-gradient(transparent, #0000004d);
+  border: 3px solid var(--color_5);
 }
 
 .dates div:nth-child(n+36):hover{
@@ -297,31 +341,54 @@ margin: 7% 45%;
 
 /*second row*/
 
-.second-row{
-  
+.second-row{ 
   margin: 0.3% 1%;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
 }
 
 .booking-reminder{
-  background-color: var(--color_2);
+  background-color: var(--color_7);
   margin-right: 3.5%;
+  display: flex;
 }
 
 .event-reminder{
-  background-color: var(--color_2);
+  background-color: var(--color_7);
   margin-right: 3.5%;
+  display: flex;
 }
 
 .payment-reminder{
-  background-color: var(--color_2);
+  background-color: var(--color_7);
   margin-right: 3.5%;
+  display: flex;
 }
 
 .private-files{
-  background-color: var(--color_2); 
+  background-color: var(--color_7); 
+  display: flex;
 }
+
+.booking-reminder-img,.business-user-curriculum-img,.event-reminder-img,.payment-reminder-img{
+  margin:  5% 3%;
+  height: 50%;
+  padding: 4%;
+}
+
+.reminder-heading{
+  color: var(--color_5);
+  margin: 10% 4%;
+  font-size: 1.3rem;
+}
+
+.private-files-heading{
+  color: var(--color_5);
+  margin: 14% 4%;
+  font-size: 1.3rem;  
+}
+
+/*third  row*/
 
 .third-row{
  
