@@ -145,7 +145,8 @@ margin: 7% 45%;
   flex: 5;
   background-color: var(--color_8);
   display: flex;
-  height: 100vh;
+  height: 100vh; 
+  overflow-y: auto;
 }
 
 
@@ -153,14 +154,14 @@ margin: 7% 45%;
 
 .dashboard-container{
   display: grid;
-  grid-template-rows: 2.2fr 1fr 1.8fr;
+  grid-template-rows: 2fr 0.7fr 2.3fr;
   flex: 1;
 }
 
 .first-row{
  
   display: grid;
-  grid-template-columns: 2.8fr 1.2fr;
+  grid-template-columns: 2.8fr 1.1fr;
   
 }
 
@@ -170,7 +171,7 @@ margin: 7% 45%;
 .announcment-container{
   background-color: var(--color_6);
   margin: 1.2%;
-  grid-template-rows: 1fr 6fr;
+  grid-template-rows: 0.5fr 2fr;
   display: grid;
  
 }
@@ -184,21 +185,18 @@ margin: 7% 45%;
 }
 
 .announcment-tile-container{
-  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
   display: grid;
   margin:0% 3% 1% ;
 }
 
 .announcment-tile-heading{
-  margin: 4% 4% 0%; 
+  margin: 2% 4% 0%; 
   font-size: 1.2rem;text-align: center;
   font-weight: bold;
   color:var(--color_4);
 }
-.announcment{
-  font-size: 1.1rem;
-  flex:4; 
-}
+
 
 .announcment-details{
   font-size: 1rem;
@@ -220,6 +218,7 @@ margin: 7% 45%;
   background-color: var(--color_7);
   margin: 3% 4% 3% 1%; 
   user-select: none; 
+  
    
 }
 
@@ -228,7 +227,7 @@ margin: 7% 45%;
   box-shadow: 0px 0px 15px 3px rgba(0, 0, 0, 0.2);
   font-family: "Roboto", sans-serif;
   overflow: hidden;
-  height: 10%;
+  height: 50%;
 }
 
 .calendar-container .month{
@@ -273,7 +272,7 @@ margin: 7% 45%;
 .week div{
   width: 14.28%;
   text-align: center;
-  padding: 2% 0%;
+  padding: 1.5% 0%;
   transition: 0.4s;
 }
 
@@ -284,19 +283,19 @@ margin: 7% 45%;
  .dates{
   display: flex;
   flex-wrap: wrap;
-  padding: 2% 0;
+  padding: 1% 0;
   color: var(--color_11);
 }
 
 .dates div{
-  width: 10%;
+  width: 11.1%;
   height: 10%;
-  margin: 2px;
+  margin: 2.5px;
   margin-top: 1.7px;
   text-align: center;
   line-height: 100%;
-  border: 2.5px solid var(--color_6);
-  padding: 1% 2%;
+  border: 3px solid var(--color_6);
+  padding: 1% 0%;
 }
 
 .dates .today{
@@ -307,7 +306,7 @@ margin: 7% 45%;
 .dates .today:hover{
   background-color:var(--color_5);
   font-size: 1rem;
-  font-weight: 600;
+  font-weight: 200;
 }
 
 .dates div:hover:not(.today){
@@ -319,12 +318,11 @@ margin: 7% 45%;
   border: 3px solid var(--color_5);
 }
 
-.dates div:nth-child(n+36):hover{
+.dates div:nth-child(n+27):hover{
   -webkit-box-reflect: above 4px linear-gradient(transparent, #0000004d);
 }
 
-
-.calendar-container .dates div:nth-child(n+43){
+.calendar-container .dates div:nth-child(n+38){
   border: none !important;
   cursor: auto !important;
   background: none !important;
