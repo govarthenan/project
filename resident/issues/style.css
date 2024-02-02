@@ -447,11 +447,9 @@ textarea{
   width: 90%;
 }
 
-textarea{
-  background-color:var(--form_color);
-  padding: 1% 5%;
-  border: none;
-  width: 90%;
+textarea:focus {
+  outline: none; 
+  border: 1px solid var(--color_4);
 }
 
 input{

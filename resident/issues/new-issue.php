@@ -11,8 +11,8 @@ include('sidenav.php');
   </head>
   <body>
     <div class="main-content">
-    <div class="new-issue-landing">
-    <div class="issue-column-new">
+     <div class="new-issue-landing">
+      <div class="issue-column-new">
             <div class="issue-type">
                 <div class="new-issue-log">
                   <img src="one-finger-tap.svg" class="select-complaint-img" />
