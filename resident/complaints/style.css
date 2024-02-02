@@ -436,8 +436,7 @@ margin:2% 3%;
 select{
   background-color:var(--form_color);
   padding: 1% 8%;
-  border: none;
-  
+  border: none; 
 }
 
 textarea{
@@ -446,7 +445,6 @@ textarea{
   border: none;
   width: 90%;
 }
-
 
 input{
   background-color:var(--form_color);
@@ -483,7 +481,6 @@ input[type="file"] {
   border: 1px solid #ccc;
   border-radius: 4px;
 }
-
 
 .custom-file-upload {
   display: inline-block;
@@ -642,8 +639,7 @@ input[type="file"] {
   margin-top: 1%;
 }
 
-.attachment-column-view{
-   
+.attachment-column-view{ 
   margin-top: 20%;
 }
 
@@ -664,7 +660,6 @@ input[type="file"] {
     background-color: var(--color_6);
     border-color: var(--color_1);
     color: var(--color_1);
-   
   }
   
   .delete-btn{
