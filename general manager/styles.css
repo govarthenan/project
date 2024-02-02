@@ -1,0 +1,105 @@
+:root {
+  --color_1: #f43c6e;
+  --color_2: #7ec4ff;
+  --color_3: #408dff;
+  --color_4: #154aaa;
+  --color_5: #4cc2c4;
+  --color_6: #ffff;
+  --color_7: #0c3866;
+  --color_8: rgba(135, 172, 202, 0.4);
+  --color_9: #073907;
+  --color_10:#9370db;
+  --color_11:#e3edf6;
+  --form_color:rgba(213, 235, 247, 0.50);
+
+  --font_master: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  --font_company_name: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  --opacity_1: 55%;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100vw;
+  display: flex;
+  font-family: var(--font_master);
+}
+
+.main-content {
+  flex: 5;
+  background-color: var(--color_8);
+  display: flex;
+  height:100vh;
+  overflow-y: auto;
+}
+
+.dashboard-container-general-manger{
+  flex:1;
+  display: grid;
+  grid-template-columns: 5fr 2fr;
+  height: 100%;
+}
+
+.first-column{
+height: 97%;
+display: grid;
+grid-template-rows: 1.3fr 3fr 2fr;
+}
+
+.second-column{
+  height: 97%;
+ 
+  display: grid;
+  grid-template-rows: 2fr 3fr;
+}
+
+.column-box-1{
+  background-color: var(--color_6);
+  margin: 2% 3% 2% 1%;
+}
+
+.column-box-2{
+  background-color: var(--color_6);
+  margin: 1% 3% -1% 1%;
+}
+.first-row{
+display: grid;
+grid-template-columns: 1fr 1fr 1fr;
+}
+
+.box-1{
+  margin: 3%;
+  background-color: var(--color_6);
+}
+
+.box-2{
+  margin: 3% 1%;
+  background-color: var(--color_6);
+}
+
+.box-3{
+  margin: 3% 2%;
+  background-color: var(--color_6);
+}
+
+.second-row{
+  margin:0% 1% 1% 1%;
+  background-color: var(--color_6);
+}
+
+.third-row{
+  
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.rectangle-1{
+  background-color: var(--color_6);
+  margin:-1.5% 1% -3% 0.5%;
+}
+
+.rectangle-2{
+  background-color: var(--color_6); 
+  margin:-1.5% 0.3% -3% 1%;
+}
