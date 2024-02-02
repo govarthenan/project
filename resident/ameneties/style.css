@@ -149,6 +149,7 @@ margin: 7% 45%;
   background-color: var(--color_8);
   display: flex;
   height: 100vh;
+  overflow-y: auto;
 }
 
 /*dashboard*/
@@ -444,7 +445,10 @@ textarea{
   border: none;
   width: 90%;
 }
-
+textarea:focus {
+  outline: none; 
+  border: 1px solid var(--color_4); 
+}
 
 input{
   background-color:var(--form_color);
@@ -541,7 +545,7 @@ input[type="file"] {
  background-color: var(--color_6);
  border: #0c3866;
  flex: 1;
- margin: 18% 30%;
+ margin: 10% 35%;
  text-align: center;
  padding: 1.5%;
  border-radius: 8px;
@@ -592,6 +596,32 @@ input[type="file"] {
   color: var(--color_6);
 }
 
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(143, 144, 150, 0.2);
+ 
+}
+
+.close {
+  color: var(--color_2);
+  margin-left:90% ;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: var(--color_4);
+  text-decoration: none;
+  cursor: pointer;
+}
 /*sucsessful submission*/
 
 .submission-successful{
@@ -959,21 +989,25 @@ input[type="file"] {
 
 .booking-tiles{
   background-color:var(--color_6);
-  box-shadow: 0 8px 16px rgba(7, 7, 85, 0.2);
-  padding: 2%;
+  box-shadow: 0 8px 16px rgba(9, 9, 113, 0.3);
+  padding: 2.5%;
   margin: 2% 3%;
-  border-radius: 5px;
-  display: grid;
-  grid-template-columns: 1.3fr 1.2fr 1.5fr;
+  display: flex;
+  
 }
 
-.booking-date,.booking-time{
-  border-right:solid  var(--color_4); 
+.booking-date{
+  background-color: var(--color_7);
+  color: var(--color_6);
+  flex: 2;
 }
 
+.booking-type{
+  flex: 3;
+}
 .booking-date,.booking-time,.booking-type{
   margin-left: 3%;
-  padding: 8%;
+  padding: 2%;
 }
 
 .booking-tiles-history{
@@ -1178,17 +1212,15 @@ margin-top: 1%;
   padding: 2%;
 }
 
-
-
 .time-name:hover{
   background-color: var(--color_7);
-  border:solid var(--color_2);
+  border: 1px solid var(--color_2);
   color: var(--color_6);
 }
 
 .date-name:hover{
   background-color: var(--color_7);
-  border:solid var(--color_2);
+  border:1px solid var(--color_2);
   color: var(--color_6);
 }
 
@@ -1246,3 +1278,5 @@ margin-top: 1%;
 }
 
 /*payment*/
+
+

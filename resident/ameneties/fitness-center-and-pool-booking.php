@@ -69,9 +69,25 @@ include('sidenav.php');
        
      </div>
      <div class="submit-column-amenity">
-                 <button class="cancel-btn-amenity">Cancel</button>
-                 <button class="submit-btn-amenity">Submit</button>
+            <button class="cancel-btn-amenity">Cancel</button>
+            <button id="submit-btn-amenity" class="submit-btn-amenity">Submit</button>
+        </div>
     </div>
+
+    <!-- Modal -->
+    <div id="myModal" class="modal" style="display: none;">
+        <div class="submission-confirmation">
+            <span class="close">&times;</span>
+            <h2 class="confirmation-heading">Confirm Submission</h2>
+            <h3>Are you sure you want to submit this booking?</h3>
+            <p>Click, "Confirm" to proceed with submission<br>or cancel to make changes.</p>
+            <div class="submit-column-confirmation">
+                <button class="cancel-btn-confirmation">Cancel</button>
+                <button class="submit-btn-cofirmation">Confirm</button>
+            </div>
+        </div>
     </div>
+
+    <script src="index.js"></script>
 </body>
 </html>

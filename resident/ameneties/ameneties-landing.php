@@ -22,24 +22,29 @@ include('sidenav.php');
            <hr>
             <div class="booking-tiles">
               <div class="booking-date"> 2024/01/20</div>
-              <div class="booking-time"> 8.00 a.m</div>
-              <div class="booking-type"> Fitness Center</div>
+             <div class="booking-type"> Fitness Center</div>
             </div>
+
             <div class="booking-tiles">
               <div class="booking-date"> 2024/01/23</div>
-              <div class="booking-time"> 8.00 a.m</div>
               <div class="booking-type"> Fitness Center</div>
             </div>
+
             <div class="booking-tiles">
               <div class="booking-date"> 2024/01/25</div>
-              <div class="booking-time"> 5.00 p.m</div>
               <div class="booking-type"> Pool</div>
             </div>
+
             <div class="booking-tiles">
               <div class="booking-date"> 2024/02/15</div>
-              <div class="booking-time"> 10.00 a.m</div>
               <div class="booking-type"> Common Area</div>
             </div>
+
+            <div class="booking-tiles">
+              <div class="booking-date"> 2024/02/15</div>
+               <div class="booking-type"> Common Area</div>
+            </div>
+            
           </div>
 
           <div class="booking-history">
