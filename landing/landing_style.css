@@ -91,7 +91,6 @@ body {
 
 .signup_button {
     color: var(--color_5);
-
     border-width: 2px;
     border-style: solid;
     border-color: var(--color_5);
