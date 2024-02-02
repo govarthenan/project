@@ -1343,8 +1343,7 @@ grid-template-columns: 2fr 1fr;
   font-size: 1.3rem;
   padding: 1.2%;
   color: var(--color_4);
-  font-weight: bold;
-  
+  font-weight: bold; 
 }
 
 .notification-content{
