@@ -13,6 +13,25 @@ include('sidenav.php');
     <div class="main-content">
       <div class="amenity">
       
+      <div class="container-amenity-tiles">
+           
+           <div class="pool-container">
+             <img src="pool.svg" class="pool-image">
+             <p class="amenity-heading">Pool</p>
+           </div>
+
+           <div class="fitness-center-container">
+             <img src="gym.svg" class="gym-image">
+             <p class="amenity-heading">Fitness Center</p>
+           </div>
+
+           <div class="common-area-container">
+             <img src="common-area.svg" class="common-image">
+             <p class="amenity-heading">Common Area</p>
+          </div>
+
+        </div>  
+
         <div class="container-amenity-details">
           <div class="up-coming-booikng">
             <div class="up-coming-booking-heading">
@@ -40,12 +59,7 @@ include('sidenav.php');
               <div class="booking-type"> Common Area</div>
             </div>
 
-            <div class="booking-tiles">
-              <div class="booking-date"> 2024/02/15</div>
-               <div class="booking-type"> Common Area</div>
-            </div>
-            
-          </div>
+           </div>
 
           <div class="booking-history">
             <div class="booking-history-heading">
@@ -54,69 +68,40 @@ include('sidenav.php');
            </div>
            <hr>
               
-            <div class="booking-tiles-history">
-              <div class="booking-date-history"> 2024/01/20</div>
-              <div class="booking-time-history"> 8.00 a.m</div>
-              <div class="booking-type-history"> Fitness Center</div>
-              <div class="booking-status">
-                <p class="booking-status-completed">Completed</p>
-              </div>
-            </div>
-            <div class="booking-tiles-history">
-              <div class="booking-date-history"> 2024/01/23</div>
-              <div class="booking-time-history"> 8.00 a.m</div>
-              <div class="booking-type-history"> Fitness Center</div>
-              <div class="booking-status">
-                <p class="booking-status-completed">Completed</p>
-              </div>
-            </div>
-            <div class="booking-tiles-history">
-              <div class="booking-date-history"> 2024/01/25</div>
-              <div class="booking-time-history"> 8.00 a.m</div>
-              <div class="booking-type-history"> Fitness Center</div>
-              <div class="booking-status">
-                <p class="booking-status-not-completed">Not Completed</p>
-              </div>
-            </div>
-            <div class="booking-tiles-history">
-              <div class="booking-date-history"> 2024/01/25</div>
-              <div class="booking-time-history"> 5.00 p.m</div>
-              <div class="booking-type-history"> Pool</div>
-              <div class="booking-status">
-                <p class="booking-status-completed">Completed</p>
-              </div>
+           <table id="bookingTable">
+    <thead>
+        <tr>
+            <th>Booking ID</th>
+            <th>Booking Date</th>
+            <th>Booking Type</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>001</td>
+            <td>2024-01-01</td>
+            <td>Fitness-Center</td>
+        </tr>
+        <tr>
+            <td>002</td>
+            <td>2024-01-05</td>
+            <td>Common Area</td>
+        </tr>
+        <tr>
+            <td>003</td>
+            <td>2024-01-10</td>
+            <td>Pool</td>
+        </tr>
+        <!-- Add more rows as needed -->
+    </tbody>
+</table>
             </div>
            
-          </div>
-
-          <div class="booking-calendar">
-          <div class="booking-calendar-heading">
-              <img src="booking_calendar.svg" class="booking-calendar-img" />
-              <span class="booking-calendar-title">Booking Calendar</span>
-            </div>
-            <hr>
           </div>
 
         </div>
         
-        <div class="container-amenity-tiles">
-           
-           <div class="pool-container">
-             <img src="pool.svg" class="pool-image">
-             <p class="amenity-heading">Pool</p>
-           </div>
-
-           <div class="fitness-center-container">
-             <img src="gym.svg" class="gym-image">
-             <p class="amenity-heading">Fitness Center</p>
-           </div>
-
-           <div class="common-area-container">
-             <img src="common-area.svg" class="common-image">
-             <p class="amenity-heading">Common Area</p>
-          </div>
-
-        </div>
+       
   
        
       </div>

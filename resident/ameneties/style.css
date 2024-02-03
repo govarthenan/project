@@ -6,7 +6,7 @@
   --color_5: #4cc2c4;
   --color_6: #ffff;
   --color_7: #0c3866;
-  --color_8:  rgba(135, 172, 202, 0.4);
+  --color_8:  rgba(180, 197, 211, 0.4);
   --color_9: #073907;
   --color_10: #9370db;
   --color_11: #e3edf6;
@@ -929,30 +929,23 @@ input[type="file"] {
 .amenity{
   display: grid;
   grid-template-rows: 2.5fr 1fr; 
-  flex: 1;
-  
+  flex: 1; 
 }
 
 .container-amenity-details {
   display: grid;
-  grid-template-columns: 1.5fr 1.6fr 1fr; 
+  grid-template-columns: 2fr 3fr; 
 }
 
 .up-coming-booikng{
  background-color: var(--color_6);
- margin: 5.5% 14% 4% 7%;
- 
+ margin: 0% 5% 4% 5%;
 }
 
 .booking-history{
   background-color: var(--color_6);
-  margin: 5.3% 20% 4% -10%;
+  margin: 0% 5% 2% 0%;
   overflow: auto;
-}
-
-.booking-calendar{
- background-color: var(--color_6);
- margin: 7.9% 9% 7% -26%;
 }
 
 .container-amenity-tiles{
@@ -960,11 +953,11 @@ input[type="file"] {
   grid-template-columns: 1fr 1fr 1fr; 
 }
 .pool-container,.fitness-center-container,.common-area-container{
-  margin: 2.5% 7% ;
+  margin: 10% 10% ;
   background-color: var(--color_7);
   border-color: var(--color_6);
   border-style: solid;
-  border-width: 1rem;
+  border-width: 0.5rem;
   box-shadow: 0 8px 16px rgba(7, 7, 85, 0.7);
 }
 
@@ -997,8 +990,7 @@ input[type="file"] {
 }
 
 .booking-date{
-  background-color: var(--color_7);
-  color: var(--color_6);
+  color: var(--color_7);
   flex: 2;
 }
 
@@ -1036,7 +1028,7 @@ input[type="file"] {
 }
 
 .booking-history-img,.up-coming-booking-img{
-  width: 5%;
+  width: 4%;
   height: 5%;
   margin: 2% 2% 0% 5%;
 }
@@ -1060,6 +1052,34 @@ input[type="file"] {
   margin-top: 2%;
   
 }
+
+/* Style for the booking table */
+
+#bookingTable {
+  width: 96%;
+  border-collapse: collapse;
+  margin: 2% 2% 8%;
+}
+
+ #bookingTable td {
+  border-bottom: 1px solid var(--color_2);
+}
+
+#bookingTable th, #bookingTable td {
+  padding: 2%;
+  text-align: left;
+}
+
+#bookingTable th {
+  background-color:var(--color_7);
+  color: var(--color_6);
+}
+
+#bookingTable tr:nth-child(even) {
+  background-color: var(--color_6);
+}
+
+
 
 /*booking interface*/
 
