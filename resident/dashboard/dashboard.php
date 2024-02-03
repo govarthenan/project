@@ -98,14 +98,15 @@ include('sidenav.php');
         </div>
         <div class="third-row">
           <div class="maitenance-payment-overview">
-            
+             <canvas id="maintenancePaymentChart" width="1500%" height="200%"></canvas>
           </div>
           <div class="utility-useage-overview">
-
+             <canvas id="utilityUsageChart" width="100%" height="90%"></canvas>
           </div>
         </div>
       </div>
     </div>
     <script src="index.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
   </body>
 </html>

@@ -70,3 +70,94 @@ function moveDate(para){
 
   randerDate()
 }
+
+document.addEventListener('DOMContentLoaded', function() {
+    var ctx = document.getElementById('maintenancePaymentChart').getContext('2d');
+    var maintenancePaymentChart = new Chart(ctx, {
+        type: 'line',
+        data: {
+            labels: ['September', 'Octomber', 'November', 'December', 'January', 'February'],
+            datasets: [{
+                label: 'Maintenance Payment (Rs)',
+                data: [1000, 1350, 1250, 1400, 1500, 1950], 
+                backgroundColor: '#154aaa',
+                borderColor: '#0c3866',
+                borderWidth: 1,
+                tension: 0.1 
+            }]
+        },
+        options: {
+            scales: {
+                y: {
+                    beginAtZero: true,
+                    title: {
+                        display: true,
+                        text: 'Amount (Rs.)',
+                        color:'black',
+                        font: { 
+                            size: 14
+                        }   
+                    }
+                },
+                x: {
+                    title: {
+                        display: true,
+                        text: 'Month',
+                        color:'black',
+                        font: { 
+                            size: 14
+                        }
+                    }
+                }
+            },
+            plugins: {
+                legend: {
+                    display: true,
+                    position: 'top',
+                    labels: {
+                        boxWidth: 20
+                    }
+                }
+            },
+            responsive: true,
+            maintainAspectRatio: false
+        }
+    });
+});
+
+
+document.addEventListener('DOMContentLoaded', function() {
+    var ctx = document.getElementById('utilityUsageChart').getContext('2d');
+    var utilityUsageChart = new Chart(ctx, {
+        type: 'bar',
+        data: {
+            labels: ['August', 'September', 'Octomber', 'November', 'December', 'January'],
+            datasets: [{
+                label: 'Electricity (kWh)',
+                data: [200, 185, 220, 210, 230, 195],
+                backgroundColor: 'rgba(54, 162, 235, 0.7)',
+                borderColor: 'rgba(54, 162, 235, 1)',
+                borderWidth: 1
+            }, {
+                label: 'Water (Liters)',
+                data: [300, 290, 310, 305, 320, 280],
+                backgroundColor: 'rgba(75, 192, 192, 0.7)',
+                borderColor: 'rgba(75, 192, 192, 1)',
+                borderWidth: 1
+            }]
+        },
+        options: {
+            scales: {
+                y: {
+                    beginAtZero: true,
+                    title: {
+                        display: true,
+                        text: 'Usage'
+                    }
+                }
+            },
+            responsive: true,
+            maintainAspectRatio: false
+        }
+    });
+});

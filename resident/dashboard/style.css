@@ -6,10 +6,10 @@
   --color_5: #4cc2c4;
   --color_6: #ffff;
   --color_7: #0c3866;
-  --color_8:  rgba(135, 172, 202, 0.4);
+  --color_8:  rgba(180, 197, 211, 0.4);
   --color_9:  #016d6f;
   --color_10: #9370db;
-  --color_11: #e3edf6;
+  --color_11: #cfd0d0;
   --form_color:rgba(213, 235, 247, 0.50);
 
   --font_master: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
@@ -173,7 +173,6 @@ margin: 7% 45%;
   margin: 1.2%;
   grid-template-rows: 0.5fr 2fr;
   display: grid;
- 
 }
 
 .announcment-heading{
@@ -187,16 +186,15 @@ margin: 7% 45%;
 .announcment-tile-container{
   grid-template-rows: 1fr 1fr;
   display: grid;
-  margin:0% 3% 1% ;
+  margin:0% 2% 2% 4% ;
 }
 
 .announcment-tile-heading{
-  margin: 2% 4% 0%; 
+  margin: 3%; 
   font-size: 1.2rem;text-align: center;
   font-weight: bold;
   color:var(--color_4);
 }
-
 
 .announcment-details{
   font-size: 1rem;
@@ -206,7 +204,7 @@ margin: 7% 45%;
 }
 
 .announcment-1,.announcment-2{
-  margin: 2%;
+  margin: 1%;
   box-shadow: 0px 0px 15px 3px rgba(0, 0, 255, 0.1); 
   display: flex;
 }
@@ -217,13 +215,11 @@ margin: 7% 45%;
 .calendar{
   background-color: var(--color_7);
   margin: 3% 4% 3% 1%; 
-  user-select: none; 
-  
-   
+  user-select: none;   
 }
 
 .calendar.calendar-container{
-  background-color: var(--color_6);
+  background-color: var(--color_7);
   box-shadow: 0px 0px 15px 3px rgba(0, 0, 0, 0.2);
   font-family: "Roboto", sans-serif;
   overflow: hidden;
@@ -231,7 +227,7 @@ margin: 7% 45%;
 }
 
 .calendar-container .month{
-  width: 83%;
+  width: 84%;
   background-color:var(--color_7);
   display: flex;
   justify-content: space-between;
@@ -239,7 +235,6 @@ margin: 7% 45%;
   color: var(--color_6);
   padding: 0% 8% ;
   text-align: center;
- 
 }
 
 .month h2{
@@ -349,29 +344,42 @@ margin: 7% 45%;
   background-color: var(--color_7);
   margin-right: 3.5%;
   display: flex;
+  border-radius: 5px;
+  border: var(--color_5);
+  border-style: solid;
 }
 
 .event-reminder{
   background-color: var(--color_7);
   margin-right: 3.5%;
   display: flex;
+  border-radius: 5px;
+  border: var(--color_5);
+  border-style: solid;
 }
 
 .payment-reminder{
   background-color: var(--color_7);
   margin-right: 3.5%;
   display: flex;
+  border-radius: 5px;
+  border: var(--color_5);
+  border-style: solid;
 }
 
 .private-files{
-  background-color: var(--color_7); 
+  border: var(--color_4);
   display: flex;
+  background-color: var(--color_7);
+  border-radius: 5px;
+  border: var(--color_5);
+  border-style: solid;
 }
 
 .booking-reminder-img,.business-user-curriculum-img,.event-reminder-img,.payment-reminder-img{
-  margin:  5% 3%;
-  height: 50%;
-  padding: 4%;
+  margin:  7% 3%;
+  height: 40%;
+  padding: 4%; 
 }
 
 .reminder-heading{
@@ -380,16 +388,15 @@ margin: 7% 45%;
   font-size: 1.3rem;
 }
 
-.private-files-heading{
+.private-files-heading,.reminder-heading{
   color: var(--color_5);
-  margin: 14% 4%;
-  font-size: 1.3rem;  
+  margin: 14% 4% 10%;
+  font-size: 1.2rem;  
 }
 
 /*third  row*/
 
 .third-row{
- 
   margin: 1%;
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -398,10 +405,27 @@ margin: 7% 45%;
 .maitenance-payment-overview{
   background-color: var(--color_6);
   margin-right: 2%;
+  height: 99%; 
+  width: 98%;
+  display: block;
+  box-sizing: border-box;
+  margin-right: 2%;
+}
+
+
+#maintenancePaymentChart{
+  background-color:var(--color_6); 
+  height:50%;
+  width: 80%;
 }
 
 .utility-useage-overview {
   background-color: var(--color_6);
+}
+
+#utilityUsageChart {
+  max-width: 100%;
+  max-height: 95%;
 }
 
 /*caledar new css*/
