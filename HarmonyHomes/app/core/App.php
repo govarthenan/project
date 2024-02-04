@@ -22,9 +22,9 @@ class App{
         }
         $URL = array_values($URL); 
         //$this->params = $URL;
-        print_r($URL);
+       // print_r($URL);
         $paramsToPass = is_array($this->params) ? $this->params : array();
-        //call_user_func_array([$this->Controller,$this->method],$paramsToPass);
+        call_user_func_array([$this->Controller,$this->method],$paramsToPass);
     }
 
 
