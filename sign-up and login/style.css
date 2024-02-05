@@ -121,3 +121,34 @@ input:-webkit-autofill:active {
   margin-left: 45%;
   margin-top: 5%;
 }
+
+
+/*sign up */
+
+
+.main-container-sign-up{
+  background-color: var(--color_11);
+  height: 100vh;
+  width: 100vw;
+  overflow: auto;
+  scrollbar-width: none; 
+  -ms-overflow-style: none; 
+}
+
+.main-container-sign-u::-webkit-scrollbar {
+  display: none; 
+}
+
+.sign-up-container{
+height: 90%;
+width: 90%;
+margin: 2.5% 5%;
+background-color: var(--color_11);
+}
+
+.sign-up-heading{
+  font-size: 1.2rem;
+  color: var(--color_4);
+  margin: 2% ;
+  font-weight: bold;
+}

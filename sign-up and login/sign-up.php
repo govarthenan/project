@@ -5,22 +5,15 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <div class="main-content">
-      <div class="sign-up-congtainer">
-        <div class="left">
-         <div class="a">
-</div>
-         <div class="b">
-</div>
-         <div class="c">
-</div>
-
+    <div class="main-container-sign-up">
+      <div class="sign-up-container">
+        <div class="sign-up-heading">
+            Sign up to become a member of our residence<br> managment system....
         </div>
-        <div class="right">
-
+         
         </div>
       </div>
     </div>
