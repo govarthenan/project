@@ -68,20 +68,90 @@ display: grid;
 grid-template-columns: 1fr 1fr 1fr;
 }
 
-.box-1{
+.no-of-flats{
   margin: 3%;
-  background-color: var(--color_6);
+  background-color:var(--color_6);
+  border-radius: 5px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  padding: 2%;
+  transition: transform 0.3s ease;
 }
 
-.box-2{
+.no-of-flats:hover {
+  transform: translateY(-5px);
+}
+
+.title-dashboard-tiles {
+  font-size: 1.5rem;
+  margin-bottom: 2%;
+  text-align: center;
+  position: relative;
+}
+
+.content-info div {
+  font-size: 1.2rem;
+  margin: 1% 0;
+  color: #555;
+  letter-spacing: 0.5px;
+}
+
+.content span {
+  font-weight: bold;
+  float: right;
+  color: #333;
+}
+
+.total-flats {
+  border-bottom: 2px solid #eee;
+  padding-bottom: 15px;
+}
+
+.total-residents{
   margin: 3% 1%;
   background-color: var(--color_6);
+  border-radius: 5px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  padding: 2%;
+  transition: transform 0.3s ease;
 }
 
-.box-3{
+.total-residents:hover{
+  transform: translateY(-5px); 
+}
+
+.gender-distribution .icon {
+  margin-right: 10px;
+  font-size: 24px;
+}
+
+.gender-distribution span {
+  margin-left: auto;
+}
+
+.no-of-staff{
   margin: 3% 2%;
   background-color: var(--color_6);
+  border-radius: 5px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  padding: 2%;
+  transition: transform 0.3s ease;
 }
+
+.staff-count {
+  font-size: 20px;
+  margin: 20px 0;
+  color: #555;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.staff-count .icon {
+  margin-right: 10px;
+  font-size: 24px;
+  color: #4c8bf5; /* A pleasant blue for the icon */
+}
+
 
 .second-row{
   margin:0% 1% 1% 1%;
