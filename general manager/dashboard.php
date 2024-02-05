@@ -9,7 +9,7 @@ include('sidenav.php');
     <title>Document</title>
     <link rel="stylesheet" href="styles.css" />
   </head>
-  <body>
+  <body onload="randerDate()">
   <div class="main-content">
     <div class="dashboard-container-general-manger">
       <div class="first-column">
@@ -29,14 +29,9 @@ include('sidenav.php');
             </div>
           </div>
           <div class="total-residents">
-            <div class="title-dashboard-tiles">Gender Distribution</div>
+            <div class="title-dashboard-tiles">Residents Overview</div>
               <div class="content-info">
-               <div class="gender-distribution women">
-                 Women: <span id="womenCount">120</span>
-              </div>
-              <div class="gender-distribution men">
-                Men: <span id="menCount">150</span>
-              </div>
+               Total residents:320
             </div>
           </div>
           <div class="no-of-staff">
@@ -48,22 +43,53 @@ include('sidenav.php');
               </div>
             </div>
           </div>
-        <div class="second-row">
+          <div class="third-row">
+            <div class="rectangle-1">
+              <canvas id="consumptionChart"></canvas>
+            </div>
+            <div class="rectangle-2">
 
-        </div>
-        <div class="third-row">
-          <div class="rectangle-1">
-          <canvas id="consumptionChart"></canvas>
+            </div>
           </div>
-          <div class="rectangle-2">
-
+          <div class="second-row">
+             
           </div>
         </div>
-      </div>
       <div class="second-column">
-        <div class="column-box-1">
+      <div class="calendar">
+            <div class="calendar-container">
+              <div class="new-calendar-event">
+                + Add new event
+              </div>
+              <div class="month">
+               <div class="prev" onclick="moveDate('prev')">
+                <span class="arrow">&#10094</span>
+              </div>
 
-        </div>
+              <div>
+                <h2 id="month">April-2023</h2>
+                <p id="date">Tue April 20 2023</p>
+              </div>
+
+              <div class="next" onclick="moveDate('next')">
+               <span class="arrow">&#10095</span>
+              </div>
+            </div>
+
+            <div class="week">
+              <div>Sun</div>
+              <div>Mon</div>
+              <div>Tue</div>
+              <div>Wed</div>
+              <div>Thu</div>
+              <div>Fri</div>
+              <div>Sat</div>
+            </div>
+            
+            <div class="dates">
+            </div>
+           </div>
+          </div>
         <div class="column-box-2">
           
         </div>

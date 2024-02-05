@@ -44,21 +44,143 @@ body {
 .first-column{
 height: 97%;
 display: grid;
-grid-template-rows: 1.3fr 3fr 2fr;
+grid-template-rows: 0.9fr 1.3fr 3fr;
 }
 
 .second-column{
   height: 97%;
- 
   display: grid;
-  grid-template-rows: 2fr 3fr;
+  grid-template-rows: 2.5fr 3fr;
 }
 
-.column-box-1{
+.calendar{
+  background-color: var(--color_7);
+  margin: 3% 4% 3% 1%; 
+  user-select: none;   
+}
+
+.calendar.calendar-container{
+  background-color: var(--color_7);
+  box-shadow: 0px 0px 15px 3px rgba(0, 0, 0, 0.2);
+  font-family: "Roboto", sans-serif;
+  overflow: hidden;
+  height: 50%;
+}
+
+.calendar-container .month{
+  width: 84%;
+  background-color:var(--color_7);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: var(--color_6);
+  padding: 0% 8% ;
+  text-align: center;
+}
+
+.month h2{
+  font-size: 1.3rem;  
+}
+
+.month p{
+  font-size: 1.1rem;
+}
+
+.month .arrow{
+  width: 1.5rem;
+  height: 1.5rem;
+  display: inline-block;
+  line-height: 1.5rem;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.month .arrow:hover{
+  background-color:var(--color_9);
+}
+
+.calendar .week{
+  display: flex;
+  background-color: var(--color_5);
+  color: var(--color_6);
+}
+
+.week div{
+  width: 14.28%;
+  text-align: center;
+  padding: 1.5% 0%;
+  transition: 0.4s;
+}
+
+.week .active{
+  background-color: var(--color_9);
+}
+
+ .dates{
+  display: flex;
+  flex-wrap: wrap;
+  padding: 1% 0;
+  color: var(--color_11);
+}
+
+.dates div{
+  width: 11.1%;
+  height: 10%;
+  margin: 2.5px;
+  margin-top: 1.7px;
+  text-align: center;
+  line-height: 100%;
+  border: 3px solid var(--color_6);
+  padding: 1% 0%;
+}
+
+.dates .today{
+  background-color:var(--color_5);
+  color: var(--color_6);
+}
+
+.dates .today:hover{
+  background-color:var(--color_5);
+  font-size: 1rem;
+  font-weight: 200;
+}
+
+.dates div:hover:not(.today){
   background-color: var(--color_6);
-  margin: 2% 3% 2% 1%;
+  color:var(--color_5);
+  font-size: 600;
+  cursor: pointer;
+  -webkit-box-reflect: below 4px linear-gradient(transparent, #0000004d);
+  border: 3px solid var(--color_5);
 }
 
+.dates div:nth-child(n+27):hover{
+  -webkit-box-reflect: above 4px linear-gradient(transparent, #0000004d);
+}
+
+.calendar-container .dates div:nth-child(n+38){
+  border: none !important;
+  cursor: auto !important;
+  background: none !important;
+}
+
+.dates .prev, .dates .next{
+  opacity: 0.5;
+}
+
+.dates .prev:hover,
+.dates .next:hover{
+  opacity: 1;
+}
+
+.new-calendar-event{
+  color: var(--color_6);
+  float: right;
+  padding: 2% 3%;
+  border: var(--color_6);
+  border-style: solid;
+  margin: 2%;
+}
 .column-box-2{
   background-color: var(--color_6);
   margin: 1% 3% -1% 1%;
@@ -119,15 +241,6 @@ grid-template-columns: 1fr 1fr 1fr;
   transform: translateY(-5px); 
 }
 
-.gender-distribution .icon {
-  margin-right: 10px;
-  font-size: 24px;
-}
-
-.gender-distribution span {
-  margin-left: auto;
-}
-
 .no-of-staff{
   margin: 3% 2%;
   background-color: var(--color_6);
@@ -137,29 +250,14 @@ grid-template-columns: 1fr 1fr 1fr;
   transition: transform 0.3s ease;
 }
 
-.staff-count {
-  font-size: 20px;
-  margin: 20px 0;
-  color: #555;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.staff-count .icon {
-  margin-right: 10px;
-  font-size: 24px;
-  color: #4c8bf5; /* A pleasant blue for the icon */
-}
-
 
 .second-row{
-  margin:0% 1% 1% 1%;
+  margin:1.5% 1% 1% 1%;
   background-color: var(--color_6);
+  flex: 1;
 }
 
 .third-row{
-  
   display: grid;
   grid-template-columns: 1fr 1fr;
 }
@@ -171,5 +269,5 @@ grid-template-columns: 1fr 1fr 1fr;
 
 .rectangle-2{
   background-color: var(--color_6); 
-  margin:-1.5% 0.3% -3% 1%;
+  margin:-1.5% 0.3% -3% 1.5%;
 }
