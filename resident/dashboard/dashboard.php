@@ -59,7 +59,6 @@ include('sidenav.php');
               <div class="next" onclick="moveDate('next')">
                <span class="arrow">&#10095</span>
               </div>
-
             </div>
 
             <div class="week">
