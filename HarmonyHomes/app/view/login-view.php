@@ -11,11 +11,11 @@ $this->view("includes/header");?>
             <div class="company-name-sign-in">Harmony Homes!</div>
            <img src="logo.svg" class="logo-sign-in">
             <form action="/submit-login" method="post">
-              <div class="form-group">
+              <div class="form-group-sign-in">
                 <label for="username">Username:</label>
                 <input type="text" id="username" name="username" required>
               </div>
-              <div class="form-group">
+              <div class="form-group-sign-in">
                 <label for="password">Password:</label>
                 <input type="password" id="password" name="password" required>
               </div>
