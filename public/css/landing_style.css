@@ -1,0 +1,117 @@
+:root {
+    --color_1: #f43c6e;
+    --color_2: #7ec4ff;
+    --color_3: #408dff;
+    --color_4: #154aaa;
+    --color_5: #4cc2c4;
+    --color_6: #ffff;
+    --color_7: #0c3866;
+
+    --font_master: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    font-family: var(--font_master);
+}
+
+.main_container {
+    height: 100vh;
+    width: 100vw;
+    background-color: var(--color_1);
+    display: flex;
+    flex-direction: row;
+}
+
+.main_container .landing_description {
+    flex: 3;
+    background-color: var(--color_7);
+}
+
+.main_container .landing_graphics {
+    flex: 2;
+    background-color: var(--color_7);
+}
+
+.company_name {
+    font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+    color: var(--color_3);
+}
+
+.main_container .landing_description .description_text .subtitle {
+    /* TODO: add font and fontsize */
+    margin-top: 10%;
+    margin-left: 10%;
+    text-align: left;
+    color: var(--color_6);
+    font-size: 2.5rem;
+}
+
+.main_container .landing_description .description_text .welcome_message {
+    /* TODO: add font and fontsize */
+    margin-top: 8%;
+    margin-left: 10%;
+    text-align: left;
+    /*transform: translateX(-50%);*/
+    color: var(--color_6);
+    font-size: 1.3rem;
+}
+
+.main_container .landing_description .description_buttons {
+    margin-top: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+    margin-left: -18%;
+}
+
+.login_button,
+.signup_button {
+    border-width: 0;
+    border-radius: 5px;
+    font-size: 1.5rem;
+    padding: 1%;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s, color 0.3s;
+    cursor: pointer;
+}
+
+.login_button {
+    color: var(--color_6);
+    background-color: var(--color_5);
+    border-color: var(--color_6);
+    margin-right: 5%;
+    border-width: 2px;
+}
+
+.signup_button {
+    color: var(--color_5);
+
+    border-width: 2px;
+    border-style: solid;
+    border-color: var(--color_5);
+}
+
+.login_button:hover {
+    background-color: var(--color_6);
+    color: var(--color_5);
+    border-color: var(--color_5);
+}
+
+.signup_button:hover {
+    background-color: var(--color_5);
+    color: var(--color_6);
+    border-color: var(--color_6);
+}
+
+.landing_img {
+    
+    width: 90%;
+    height: 80%;
+    margin-top: 10%;
+}
