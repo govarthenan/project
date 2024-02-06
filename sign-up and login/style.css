@@ -1,0 +1,269 @@
+  :root {
+    --color_1: #f43c6e;
+    --color_2: #7ec4ff;
+    --color_3: #408dff;
+    --color_4: #154aaa;
+    --color_5: #4cc2c4;
+    --color_6: #ffff;
+    --color_7: #0c3866;
+    --color_8: rgba(135, 172, 202, 0.4);
+    --color_9: #073907;
+    --color_10:#9370db;
+    --color_11:#e3edf6;
+    --form_color:rgba(213, 235, 247, 0.50);
+
+    --font_master: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+    --font_company_name: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+    --opacity_1: 55%;
+  }
+
+  body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100vw;
+    display: flex;
+    font-family: var(--font_master);
+  }
+
+.main-container-sign-in{
+  background-color: var(--color_11);
+  height: 100vh;
+  width: 100vw;
+}
+
+.sign-in-container{
+  background-color: var(--color_11);
+  height: 82%;
+  width: 70%;
+  margin: 4% 15%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.5);
+}
+
+.login-form{
+  margin: 10% 5%; 
+}
+
+.sign-in-form-group {
+  margin-bottom: 5%;
+}
+
+.sign-in-form-group label {
+    display: block;
+    margin-bottom: 2%;
+    font-size: 1.2rem;
+    color: var(--color_4);
+    font-weight: bold;
+}
+
+.sign-in-form-group input {
+  width: 80%;
+  padding: 3%;
+  border: 1px solid var(--color_2);
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover, 
+input:-webkit-autofill:focus, 
+input:-webkit-autofill:active {
+    -webkit-box-shadow: 0 0 0 30px white inset !important;
+    -webkit-text-fill-color:var(--color_4) !important;
+}
+
+.sign-in-form-group input {
+    width: 80%;
+    padding: 3%;
+    border: 1px solid var(--color_2);
+    background-color: var(--color_6);
+}
+
+.sign-in-form-group input:focus {
+  outline: none;
+  border-color:var(--color_4);
+}
+
+.sign-in-form-group .forgot-password {
+  text-align: left;
+  font-size: 1.1rem;
+}
+
+.password-reset{
+  display: flex;
+}
+
+.btn {
+  background-color:var(--color_7);
+  color: var(--color_6);
+  padding: 3%;
+  border: none;
+  cursor: pointer;
+  width: 86%;
+  font-size: 1.1rem;
+  font-weight: bold;
+}
+
+.btn:hover {
+  background-color: var(--color_5);
+}
+
+.company-name-sign-in{
+  font-size: 2rem;
+  font-family: var(--font_company_name);
+  color: var(--color_5);
+  text-align: center;
+}
+
+.logo-sign-in{
+  margin-left: 45%;
+  margin-top: 5%;
+}
+
+.sign-in-container-company-logo{
+  height: 80%;
+  width: 70%;
+  margin: 2% 10%;
+}
+
+
+/*sign up */
+
+
+.main-container-sign-up{
+  background-color: var(--color_11);
+  height: 100vh;
+  width: 100vw;
+  overflow: auto;
+  scrollbar-width: none; 
+  -ms-overflow-style: none; 
+}
+
+.main-container-sign-up::-webkit-scrollbar {
+  display: none; 
+}
+
+.sign-up-container{
+height: 180%;
+width: 40%;
+margin: 2.5% 5% 2.5% 45% ;
+background-color: var(--color_11);
+color: var(--color_7);
+box-shadow: 2px 0 5px rgba(0, 0, 0, 0.6);
+}
+
+.company-name{
+  font-size: 2rem;
+  color: var(--color_5);
+  margin: 2% 15% ;
+  font-weight: bold;
+  position:fixed;
+  font-family: var(--font_company_name);
+}
+
+.sign-up-image{
+width: 30%;
+height: 50%;
+margin: 23% 10% 0% 8%;
+position:fixed;
+}
+
+.sign-up-message{
+  margin:1% 2% 0%;
+  color: var(--color_7);
+  font-size: 1.5rem;
+  font-weight: bold;
+  padding: 2%;
+}
+
+.sign-up-input-container{
+  display: grid;
+  padding: 2%;
+}
+
+.sign-up-left{
+  margin: 1% 1% 0%; 
+}
+
+.sign-up-bottom{
+  margin: 1%;  
+}
+.registration-form label {
+  display: block;
+  margin-bottom: 2%;
+  font-size: 1.2rem;
+  color: var(--color_4);
+  font-weight: bold;
+}
+
+.registration-form input:focus {
+  outline: none;
+  border-color:var(--color_4);
+}
+
+.registration-form input[type="text"],
+.registration-form input[type="email"],
+.registration-form input[type="tel"],
+.registration-form input[type="date"],
+.registration-form input[type="file"],
+.registration-form input[type="password"]{
+  width: 80%;
+  padding: 2%;
+  border: 1px solid var(--color_2);
+  margin: 0% 5% 2%;
+}
+
+.registration-form select{
+  width: 84%;
+  padding: 2%;
+  border: 1px solid var(--color_2);
+  margin: 0% 5% 2%; 
+}
+
+.registration-form button[type="submit"] {
+  background-color:var(--color_7);
+  color: var(--color_6);
+  padding: 2% 3%;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  width: 70%;
+  margin-left: 15%;
+  font-size: 1.1rem;
+  font-weight: bold;
+}
+
+.registration-form button[type="submit"]:hover {
+  background-color: var(--color_6);
+  border: var(--color_4);
+  color: var(--color_4);
+  border-style: solid;
+}
+
+.file-upload-wrapper {
+  margin-bottom: 20px;
+}
+
+.custom-file-upload {
+  background-color:var(--color_7);
+  color: var(--color_6);
+  padding: 2% 3%;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+.custom-file-upload:hover {
+  background-color: var(--color_10);
+}
+
+#nicPhotoName, #agreementPhotoName {
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+input:focus, select:focus, textarea:focus, button:focus {
+  outline: 1px solid var(--color_2)
+}
+
