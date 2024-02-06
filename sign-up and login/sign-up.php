@@ -9,14 +9,14 @@
   </head>
   <body>
     <div class="main-container-sign-up">
-       <div class="sign-up-heading">
-            Sign up to become a member of our residence<br> managment system....
+       <div class="company-name">
+           Harmony Homes! 
         </div>
        <div class="sign-up-img">
          <img src="Sign up.svg" class="sign-up-image">
         </div>
       <div class="sign-up-container">
-        <div class="sign-up-message">Sign up</div>
+        <div class="sign-up-message"> Sign up to become a member of our residence managment system....</div>
           <form action="submitForm.php" method="post" enctype="multipart/form-data" class="registration-form">
             <div class="sign-up-input-container">
               <div class="sign-up-left">

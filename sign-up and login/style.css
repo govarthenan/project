@@ -27,7 +27,7 @@
   }
 
 .main-container-sign-in{
-  background-color: var(--color_7);
+  background-color: var(--color_11);
   height: 100vh;
   width: 100vw;
 }
@@ -39,17 +39,18 @@
   margin: 4% 15%;
   display: grid;
   grid-template-columns: 1fr 1fr;
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.5);
 }
 
 .login-form{
   margin: 10% 5%; 
 }
 
-.form-group {
+.sign-in-form-group {
   margin-bottom: 5%;
 }
 
-.form-group label {
+.sign-in-form-group label {
     display: block;
     margin-bottom: 2%;
     font-size: 1.2rem;
@@ -57,7 +58,7 @@
     font-weight: bold;
 }
 
-.form-group input {
+.sign-in-form-group input {
   width: 80%;
   padding: 3%;
   border: 1px solid var(--color_2);
@@ -71,18 +72,19 @@ input:-webkit-autofill:active {
     -webkit-text-fill-color:var(--color_4) !important;
 }
 
-.form-group input {
+.sign-in-form-group input {
     width: 80%;
     padding: 3%;
     border: 1px solid var(--color_2);
     background-color: var(--color_6);
 }
 
-.form-group input:focus {
+.sign-in-form-group input:focus {
   outline: none;
   border-color:var(--color_4);
 }
-.form-group .forgot-password {
+
+.sign-in-form-group .forgot-password {
   text-align: left;
   font-size: 1.1rem;
 }
@@ -106,7 +108,6 @@ input:-webkit-autofill:active {
   background-color: var(--color_5);
 }
 
-
 .company-name-sign-in{
   font-size: 2rem;
   font-family: var(--font_company_name);
@@ -117,6 +118,12 @@ input:-webkit-autofill:active {
 .logo-sign-in{
   margin-left: 45%;
   margin-top: 5%;
+}
+
+.sign-in-container-company-logo{
+  height: 80%;
+  width: 70%;
+  margin: 2% 10%;
 }
 
 
@@ -140,36 +147,37 @@ input:-webkit-autofill:active {
 height: 180%;
 width: 40%;
 margin: 2.5% 5% 2.5% 45% ;
-background-color: var(--color_6);
+background-color: var(--color_11);
 color: var(--color_7);
+box-shadow: 2px 0 5px rgba(0, 0, 0, 0.6);
 }
 
-.sign-up-heading{
-  font-size: 1.4rem;
-  color: var(--color_4);
-  margin: 2% ;
+.company-name{
+  font-size: 2rem;
+  color: var(--color_5);
+  margin: 2% 15% ;
   font-weight: bold;
   position:fixed;
+  font-family: var(--font_company_name);
 }
 
 .sign-up-image{
 width: 30%;
-height: 70%;
-margin: 17% 10% 0% 10%;
+height: 50%;
+margin: 23% 10% 0% 8%;
 position:fixed;
 }
 
 .sign-up-message{
   margin:1% 2% 0%;
-  color: var(--color_4);
-  font-size: 1.7rem;
+  color: var(--color_7);
+  font-size: 1.5rem;
   font-weight: bold;
   padding: 2%;
 }
 
 .sign-up-input-container{
   display: grid;
- 
   padding: 2%;
 }
 
@@ -182,27 +190,38 @@ position:fixed;
 }
 .registration-form label {
   display: block;
-  margin-bottom: 1.5%;
-  font-size: 1.1rem;
+  margin-bottom: 2%;
+  font-size: 1.2rem;
+  color: var(--color_4);
+  font-weight: bold;
+}
+
+.registration-form input:focus {
+  outline: none;
+  border-color:var(--color_4);
 }
 
 .registration-form input[type="text"],
 .registration-form input[type="email"],
 .registration-form input[type="tel"],
 .registration-form input[type="date"],
-.registration-form select,
 .registration-form input[type="file"],
 .registration-form input[type="password"]{
-    width: 100%;
-    padding: 2%;
-    margin-bottom: 20px;
-    border-radius: 4px;
-    border: 1px solid #ddd;
-    box-sizing: border-box;
+  width: 80%;
+  padding: 2%;
+  border: 1px solid var(--color_2);
+  margin: 0% 5% 2%;
+}
+
+.registration-form select{
+  width: 84%;
+  padding: 2%;
+  border: 1px solid var(--color_2);
+  margin: 0% 5% 2%; 
 }
 
 .registration-form button[type="submit"] {
-  background-color:var(--color_4);
+  background-color:var(--color_7);
   color: var(--color_6);
   padding: 2% 3%;
   border: none;
@@ -226,7 +245,7 @@ position:fixed;
 }
 
 .custom-file-upload {
-  background-color:var(--color_4);
+  background-color:var(--color_7);
   color: var(--color_6);
   padding: 2% 3%;
   border: none;
