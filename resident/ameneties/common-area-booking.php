@@ -22,7 +22,7 @@ include('sidenav.php');
                   <span class="date-of-slot">Select date :</span>
                </div>
               <div class="date">
-                <img src="chevron-left.svg" class="date-name-arrow">
+                <img src="chevron-left.svg" class="date-name-arrow" onclick="prevWeek()">
                 <p class="date-name">SUN<br>08/01</p>
                 <p class="date-name">MON<br>09/01</p>
                 <p class="date-name">TUE<br>10/01</p>
@@ -30,7 +30,7 @@ include('sidenav.php');
                 <p class="date-name">THUR<br>12/01</p>
                 <p class="date-name">FRI<br>13/01</p>
                 <p class="date-name">SAT<br>14/01</p>
-                <img src="chevron-right.svg" class="date-name-arrow">
+                <img src="chevron-right.svg" class="date-name-arrow" onclick="nextWeek()">
               </div>
        </div>
       <div class="form-time">

@@ -1125,15 +1125,22 @@ margin-top: 1%;
 
 .date{
   display: grid;
-  grid-template-columns:0.5fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 0.5fr;
+  grid-template-columns:0.5fr 0.9fr 0.9fr 0.9fr 0.9fr 0.9fr 0.9fr 0.9fr 0.5fr;
   padding: 1%;
+}
+
+.date:focus{
+  background-color:var(--color_7);
+  color: white;
+  border: var(--color_6);
+  border-style: solid 1px;
 }
 
 .date-name{
   background-color: var(--color_6);
   margin: 7% 15%;
   text-align: center;
-  padding: 3% 3%;
+  padding: 3% 8%;
   border:solid var(--color_2);
   border-width: 1px;
 }
@@ -1197,8 +1204,7 @@ margin-top: 1%;
   margin-left: 9%;
 }
 #people-no{
-  background-color: var(--color_6);
-  
+  background-color: var(--color_6); 
 }
 
 .cancel-btn-amenity{
