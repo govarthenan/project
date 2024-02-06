@@ -25,7 +25,7 @@
                 </div>
             </div>
 
-            <?php
+          <?php
               if ($_SERVER["REQUEST_METHOD"] == "POST") {
               if (isset($_POST["login_button"])) {
         
