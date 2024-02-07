@@ -8,8 +8,10 @@ $this->view("includes/header");?>
         </div>
         <div class="sign-in-form-container">
           <div class="login-form">
-            <div class="company-name-sign-in">Harmony Homes!</div>
-           <img src="logo.svg" class="logo-sign-in">
+            <div class="company-profile">
+               <img src="company-logo-small.png" class="logo-sign-in">
+               <div class="company-name-sign-in">Harmony Homes</div>
+            </div>
             <form action="/submit-login" method="post">
               <div class="sign-in-form-group">
                 <label for="username">Username:</label>

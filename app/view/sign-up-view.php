@@ -2,9 +2,10 @@
 $this->view("includes/header");?>
 
 <div class="main-container-sign-up">
-       <div class="company-name">
-           Harmony Homes! 
-        </div>
+   <div class="company-profile-sign-up">
+         <img src="company-logo-small.png" class="logo-sign-up">
+         <div class="company-name-sign-up">Harmony Homes</div>
+   </div>
        <div class="sign-up-img">
          <img src="././public/assets/img/Sign up.svg" class="sign-up-image">
         </div>

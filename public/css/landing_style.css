@@ -211,18 +211,26 @@
     font-size: 2rem;
     font-family: var(--font_company_name);
     color: var(--color_5);
-    text-align: center;
+    flex:6;
+    float: left;
+    margin: 3% 4%;
   }
   
   .logo-sign-in{
-    margin-left: 45%;
-    margin-top: 5%;
+    margin-left: 10%;
+   flex: 1;
+   float: right;
   }
   
   .sign-in-container-company-logo{
     height: 80%;
     width: 70%;
     margin: 2% 10%;
+  }
+  
+  .company-profile{
+    display: flex;
+    margin-bottom: 8%;
   }
   
   
@@ -251,15 +259,29 @@
   box-shadow: 0 0 4px 2px rgba(0, 0, 0, 0.2);
   }
   
-  .company-name{
+  .company-name-sign-up{
     font-size: 2rem;
     color: var(--color_5);
-    margin: 2% 15% ;
     font-weight: bold;
-    position:fixed;
     font-family: var(--font_company_name);
+    flex: 4;
+    float: left;
+    margin-top: 5%;
   }
   
+  .logo-sign-up{
+    flex: 1;
+    float: right;
+    margin-right: 5%;
+    }
+    
+    .company-profile-sign-up{
+      display: flex;
+      position:fixed;
+      margin: 3% 8%;
+      width: 20%; 
+    }
+    
   .sign-up-image{
   width: 30%;
   height: 50%;
