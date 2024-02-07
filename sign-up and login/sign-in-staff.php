@@ -15,10 +15,11 @@
         </div>
         <div class="sign-in-form-container">
           <div class="login-form">
-            <div class="company-name-sign-in">Harmony Homes!</div>
-           <img src="logo.svg" class="logo-sign-in">
-
-
+            <div class="company-profile">
+               <img src="company-logo-small.png" class="logo-sign-in">
+               <div class="company-name-sign-in">Harmony Homes</div>
+            </div>
+            
            <?php
               session_start();
                 $valid_username = 'user';
