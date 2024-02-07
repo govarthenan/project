@@ -108,7 +108,7 @@ input:-webkit-autofill:active {
   background-color: var(--color_5);
 }
 
-/*
+
 
 .company-name-sign-in{
   font-size: 2rem;
@@ -184,8 +184,6 @@ margin-right: 5%;
   width: 20%; 
 }
 
-
-*/
 .sign-up-image{
 width: 30%;
 height: 50%;

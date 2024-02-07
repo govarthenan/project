@@ -19,7 +19,7 @@
     <div class="sidebar">
         <div class="company_profile">
             <img src="company-logo-small.png" />
-            <span class="company_name">Castle Care</span>
+            <span class="company_name">Harmony Homes</span>
         </div>
 
         <div class="dropdown">
@@ -46,7 +46,7 @@
                 <span class="sidebar-title">Home</span>
             </div>
             <div class="navi-item">
-                <img src="sidebar_office-building-1.svg" class="sidebar_office_building"/>
+                <img src="sidebar_building.svg" class="sidebar_office_building"/>
                 <span class="sidebar-title">Amenities</span>
             </div>
 
