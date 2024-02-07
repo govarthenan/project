@@ -17,6 +17,26 @@
           <div class="login-form">
             <div class="company-name-sign-in">Harmony Homes!</div>
            <img src="logo.svg" class="logo-sign-in">
+
+
+           <?php
+              session_start();
+                $valid_username = 'user';
+                $valid_password = 'pass'; 
+                if ($_SERVER["REQUEST_METHOD"] == "POST"){
+                  $username = $_POST['username'];
+                  $password = $_POST['password'];
+                    if ($username === $valid_username && $password === $valid_password) {
+                      $_SESSION['username'] = $username;
+                      header("Location: welcome.php");
+                      exit();
+                   } else {
+                     $error_message = "Invalid username or password!";
+                     echo $error_message;
+                    }
+                  }
+              ?>
+
             <form action="/submit-login" method="post">
               <div class="sign-in-form-group">
                 <label for="username">Username:</label>
