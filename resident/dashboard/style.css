@@ -67,13 +67,15 @@ body {
 
 .company_profile {
   margin-left: 1%;
+  display: flex;
 }
 
 .company_name {
   margin-left: 6%;
   font-family: var(--font_company_name);
   color: var(--color_5);
-  font-size: 2rem;
+  font-size: 1.5rem;
+  margin-top: 8%;
 }
 
 .user_name {

@@ -18,7 +18,7 @@
 <body>
     <div class="sidebar">
         <div class="company_profile">
-            <img src="abc.jpg" />
+            <img src="company-logo-small.png" />
             <span class="company_name">Castle Care</span>
         </div>
 

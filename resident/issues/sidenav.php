@@ -1,5 +1,7 @@
 <?php
+// Your PHP code here (if needed)
 
+// For example:
 
 ?>
 
@@ -16,8 +18,8 @@
 <body>
     <div class="sidebar">
         <div class="company_profile">
-            <img src="abc.jpg" />
-            <span class="company_name">Castle Care</span>
+            <img src="company-logo-small.png" />
+            <span class="company_name">Harmony Homes</span>
         </div>
 
         <div class="dropdown">
@@ -44,7 +46,7 @@
                 <span class="sidebar-title">Home</span>
             </div>
             <div class="navi-item">
-                <img src="sidebar_office-building-1.svg" />
+                <img src="sidebar_office-building-1.svg" class="sidebar_office_building"/>
                 <span class="sidebar-title">Amenities</span>
             </div>
 
@@ -76,7 +78,7 @@
 
             <hr />
             <div class="navi-item">
-                    <img src="log-out.svg" />
+                    <img src="sidebar_log-out.svg" />
                     <span class="sidebar-title">Logout</span>
                 </div>
         </nav>
