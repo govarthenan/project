@@ -135,13 +135,13 @@ document.addEventListener('DOMContentLoaded', function() {
             datasets: [{
                 label: 'Electricity (kWh)',
                 data: [200, 185, 220, 210, 230, 195],
-                backgroundColor: 'rgba(54, 162, 235, 0.7)',
+                backgroundColor: 'rgba(12, 56, 102, 0.8)',
                 borderColor: 'rgba(54, 162, 235, 1)',
                 borderWidth: 1
             }, {
                 label: 'Water (Liters)',
                 data: [300, 290, 310, 305, 320, 280],
-                backgroundColor: 'rgba(75, 192, 192, 0.7)',
+                backgroundColor: 'rgba(75, 192, 192, 0.8)',
                 borderColor: 'rgba(75, 192, 192, 1)',
                 borderWidth: 1
             }]
