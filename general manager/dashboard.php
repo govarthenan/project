@@ -43,14 +43,7 @@ include('sidenav.php');
               </div>
             </div>
           </div>
-          <div class="third-row">
-            <div class="rectangle-1">
-              <canvas id="consumptionChart"></canvas>
-            </div>
-            <div class="rectangle-2">
-
-            </div>
-          </div>
+          
           <div class="second-row">
              
           </div>
@@ -91,7 +84,7 @@ include('sidenav.php');
            </div>
           </div>
         <div class="column-box-2">
-          
+        <canvas id="consumptionChart"></canvas>
         </div>
       </div>
    </div>
@@ -100,4 +93,5 @@ include('sidenav.php');
   <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 </body>
 </html>
+
   

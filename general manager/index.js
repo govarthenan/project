@@ -38,6 +38,8 @@ document.addEventListener('DOMContentLoaded', function() {
       }
   });
 });
+
+
 let newDateFunction = new Date()
 function randerDate(){
   newDateFunction.setDate(1)
