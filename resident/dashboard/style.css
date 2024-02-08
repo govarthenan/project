@@ -175,6 +175,7 @@ margin: 7% 45%;
   margin: 1.2%;
   grid-template-rows: 0.5fr 2fr;
   display: grid;
+  border-radius: 5px;
 }
 
 .announcment-heading{
@@ -217,7 +218,8 @@ margin: 7% 45%;
 .calendar{
   background-color: var(--color_7);
   margin: 3% 4% 3% 1%; 
-  user-select: none;   
+  user-select: none;  
+  border-radius: 5px; 
 }
 
 .calendar.calendar-container{
@@ -226,6 +228,7 @@ margin: 7% 45%;
   font-family: "Roboto", sans-serif;
   overflow: hidden;
   height: 50%;
+  border-radius: 5px; 
 }
 
 .calendar-container .month{
@@ -237,6 +240,7 @@ margin: 7% 45%;
   color: var(--color_6);
   padding: 0% 8% ;
   text-align: center;
+  border-radius: 5px; 
 }
 
 .month h2{
@@ -343,58 +347,125 @@ margin: 7% 45%;
 }
 
 .booking-reminder{
-  background-color: var(--color_7);
+  background-color: var(--color_6);
   margin-right: 3.5%;
   display: flex;
   border-radius: 5px;
-  border: var(--color_5);
+  border:2px var(--color_5);
   border-style: solid;
 }
 
 .event-reminder{
-  background-color: var(--color_7);
+  background-color: var(--color_6);
   margin-right: 3.5%;
   display: flex;
   border-radius: 5px;
-  border: var(--color_5);
+  border:2px var(--color_5);
   border-style: solid;
 }
 
 .payment-reminder{
-  background-color: var(--color_7);
+  background-color: var(--color_6);
   margin-right: 3.5%;
   display: flex;
   border-radius: 5px;
-  border: var(--color_5);
+  border:2px var(--color_5);
   border-style: solid;
+
 }
 
 .private-files{
   border: var(--color_4);
   display: flex;
-  background-color: var(--color_7);
+  background-color: var(--color_6);
   border-radius: 5px;
-  border: var(--color_5);
+  border:2px var(--color_5);
   border-style: solid;
 }
 
 .booking-reminder-img,.business-user-curriculum-img,.event-reminder-img,.payment-reminder-img{
-  margin:  7% 3%;
+  margin:  5% 3%;
   height: 40%;
-  padding: 4%; 
+  padding: 3%; 
+  float: left;
+  border-radius: 10%;
+  object-fit: cover;
+  background-color: var(--color_5);
 }
 
 .reminder-heading{
   color: var(--color_5);
-  margin: 10% 4%;
+  margin: 5% 4%;
   font-size: 1.3rem;
+  float: right;
 }
 
 .private-files-heading,.reminder-heading{
   color: var(--color_5);
-  margin: 14% 4% 10%;
+  margin: 5% 4% 10%;
   font-size: 1.2rem;  
 }
+
+.popup-booking,.popup-events,.popup-payment {
+  position: fixed; 
+  z-index: 1; 
+  left: 0;
+  top: 0; 
+  overflow: auto; 
+  background-color: rgba(209, 227, 249, 0.2); 
+  height: 100vh;
+  width: 100vw;
+}
+
+.modal-content-booking {
+  background-color:var(--color_6);
+  margin: 20% 20.7%; 
+  padding: 1.5%;
+  box-shadow: 0 0 4px 2px rgba(101, 140, 186, 0.2);
+  width: 15%; 
+  height: 10%;
+}
+
+.modal-content-events{
+  background-color:var(--color_6);
+  margin: 20% 40.7%; 
+  padding: 1.5%;
+  box-shadow: 0 0 4px 2px rgba(101, 140, 186, 0.2);
+  width: 15%; 
+  height: 15%; 
+}
+
+.modal-content-payment{
+  background-color:var(--color_6);
+  margin: 20% 60.7%; 
+  padding: 1.5%;
+  box-shadow: 0 0 4px 2px rgba(101, 140, 186, 0.2);
+  width: 15%; 
+  height: 10%; 
+}
+
+.close {
+  color:var(--color_4);
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: var(--color_3);
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.bookin-msg,.event-msg{
+  padding: 2% 4%;
+  font-size: 1.2rem;
+  color: var(--color_4);
+  border: var(--color_2);
+ font-weight: bold;
+}
+
 
 /*third  row*/
 
@@ -412,6 +483,7 @@ margin: 7% 45%;
   display: block;
   box-sizing: border-box;
   margin-right: 2%;
+  border-radius: 5px; 
 }
 
 
@@ -423,6 +495,7 @@ margin: 7% 45%;
 
 .utility-useage-overview {
   background-color: var(--color_6);
+  border-radius: 5px; 
 }
 
 #utilityUsageChart {

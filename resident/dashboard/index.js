@@ -161,3 +161,47 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     });
 });
+
+
+document.addEventListener('DOMContentLoaded', function() {
+    function closeModal(modal) {
+      modal.style.display = "none";
+    }
+  
+   
+    var modalBooking = document.getElementById("popupModal-booking");
+    var btnBooking = document.querySelector(".booking-reminder");
+    btnBooking.onclick = function() {
+      modalBooking.style.display = "block";
+    };
+  
+   
+    var modalEvents = document.getElementById("popupModal-events");
+    var btnEvents = document.querySelector(".event-reminder");
+    btnEvents.onclick = function() {
+      modalEvents.style.display = "block";
+    };
+  
+    
+    var modalPayment = document.getElementById("popupModal-payment");
+    var btnPayment = document.querySelector(".payment-reminder");
+    btnPayment.onclick = function() {
+      modalPayment.style.display = "block";
+    };
+  
+    
+    var closeButtons = document.querySelectorAll('.close');
+    closeButtons.forEach(function(btn) {
+      btn.onclick = function() {
+        closeModal(btn.closest('.popup-booking, .popup-events, .popup-payment'));
+      };
+    });
+  
+    
+    window.onclick = function(event) {
+      if (event.target.classList.contains('popup-booking') || event.target.classList.contains('popup-events') || event.target.classList.contains('popup-payment')) {
+        closeModal(event.target);
+      }
+    };
+  });
+  

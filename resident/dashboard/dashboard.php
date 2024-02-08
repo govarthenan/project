@@ -80,15 +80,15 @@ include('sidenav.php');
         <div class="second-row">
           <div class="booking-reminder">
             <img src="waiting-appointments-calendar.svg" class="booking-reminder-img">
-            <div class="reminder-heading">Fitness Center</div>
+            <div class="reminder-heading">Booking</div>
           </div>
           <div class="event-reminder">
              <img src="calendar-star.svg" class="event-reminder-img">
-             <div class="reminder-heading">Sinhala and tamil new year celebration</div>
+             <div class="reminder-heading">Events</div>
           </div>
           <div class="payment-reminder">
             <img src="subscription-cashflow.svg" class="payment-reminder-img">
-            <div class="reminder-heading">Maintenance Fees</div>
+            <div class="reminder-heading">Payments</div>
           </div>
           <div class="private-files">
            <img src="business-user-curriculum.svg" class="business-user-curriculum-img">
@@ -105,6 +105,30 @@ include('sidenav.php');
         </div>
       </div>
     </div>
+
+    <!-- modal part -->
+        
+    <div id="popupModal-booking" class="popup-booking" style="display:none;">
+       <div class="modal-content-booking">
+         <span class="close">&times;</span>
+         <div class="bookin-msg">Fitness center<br>12/02/2024<br>10.30 a.m</div>
+       </div>
+    </div>
+
+    <div id="popupModal-events" class="popup-events" style="display:none;">
+       <div class="modal-content-events">
+         <span class="close">&times;</span>
+         <div class="event-msg">Sinhala and tamil new year celebration<br>11/04/2024<br>10.30 a.m</div>
+       </div>
+    </div>
+
+    <div id="popupModal-payment" class="popup-payment" style="display:none;">
+       <div class="modal-content-payment">
+         <span class="close">&times;</span>
+         <div class="event-msg">Maintenace fees<br>11/04/2024<br>11.55 p.m</div>
+       </div>
+    </div>
+
     <script src="index.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
   </body>
