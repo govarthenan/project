@@ -1,0 +1,8 @@
+
+RewriteEngine On
+
+ReWriteCond %{REQUEST_FILENAME} !-f
+ReWriteCond %{REQUEST_FILENAME} !-d
+ReWriteRule ^(.*)$ index.php?url=$1 [L,QSA]
+
+FallbackResource /index.php
