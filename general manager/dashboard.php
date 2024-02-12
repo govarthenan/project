@@ -16,36 +16,42 @@ include('sidenav.php');
         <div class="first-row">
           <div class="no-of-flats" >
             <div class="title-dashboard-tiles">Flats Overview</div>
-            <div class="content-info">
-              <div class="total-flats">
-                Total Flats: <span id="totalFlats">100</span>
+            <div class="content-info-flat">
+              <div class="flat-icon">
+                <img src="residential.png" class="resident-img">
               </div>
-              <div class="sold-flats">
-               Sold Flats: <span id="soldFlats">70</span>
-              </div>
-              <div class="remaining-flats">
-              Remaining Flats: <span id="remainingFlats">30</span>
+              <div class="flat-details">
+                 Total=150<br>
+                 Sold=120<br> 
               </div>
             </div>
           </div>
           <div class="total-residents">
             <div class="title-dashboard-tiles">Residents Overview</div>
-              <div class="content-info">
-               Total residents:320
-            </div>
+              <div class="content-info-gender">
+                <div class="flat-icon">
+                  <img src="population.png" class="population-img">
+                </div>
+                <div class="flat-details">
+                 Total=540
+                </div>
+              </div>
           </div>
           <div class="no-of-staff">
             <div class="title-dashboard-tiles">Staff Members</div>
-              <div class="content-info">
-                <div class="staff-count">
-                  Total Staff: <span id="staffCount">85</span>
+              <div class="content-info-staff">
+                <div class="flat-icon">
+                  <img src="teamwork.png" class="population-img">
+                </div>
+                <div class="flat-details">
+                 Total=18
                 </div>
               </div>
             </div>
           </div>
           
           <div class="second-row">
-             
+          
           </div>
         </div>
       <div class="second-column">

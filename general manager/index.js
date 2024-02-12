@@ -1,43 +1,58 @@
 document.addEventListener('DOMContentLoaded', function() {
-  const ctx = document.getElementById('consumptionChart').getContext('2d');
-  const consumptionChart = new Chart(ctx, {
-      type: 'line',
-      data: {
-          labels: ['January', 'February', 'March', 'April', 'May', 'June'], // Example monthly labels
-          datasets: [{
-              label: 'Electricity Consumption (kWh)', // First dataset for electricity consumption
-              data: [300, 400, 350, 500, 450, 550], // Example data
-              fill: false,
-              borderColor: 'rgb(75, 192, 192)', // Line color
-              tension: 0.1 // Makes line slightly curved
-          }, {
-              label: 'Water Consumption (Liters)', // Second dataset for water consumption
-              data: [1200, 1100, 1150, 1080, 1220, 1250], // Example data
-              fill: false,
-              borderColor: 'rgb(255, 99, 132)', // Line color
-              tension: 0.1 // Makes line slightly curved
-          }]
-      },
-      options: {
-          scales: {
-              y: {
-                  beginAtZero: true,
-                  title: {
-                      display: true,
-                      text: 'Consumption'
-                  }
-              }
-          },
-          plugins: {
-              legend: {
-                  display: true,
-                  position: 'top'
-              }
-          },
-          responsive: true
-      }
+    const ctx = document.getElementById('consumptionChart').getContext('2d');
+    const consumptionChart = new Chart(ctx, {
+        type: 'line',
+        data: {
+            labels: ['January', 'February', 'March', 'April', 'May', 'June'], // Example monthly labels
+            datasets: [{
+                label: 'Total Electricity Consumption (kWh)', // Adjusted label for clarity
+                data: [300, 400, 350, 500, 450, 550], // Example data for electricity consumption
+                fill: false,
+                borderColor: 'rgb(75, 192, 192)', // Line color for electricity
+                tension: 0.1 // Slight curve in the line
+            }, {
+                label: 'Total Water Consumption (Liters)', // Adjusted label for clarity
+                data: [1200, 1100, 1150, 1080, 1220, 1250], // Example data for water consumption
+                fill: false,
+                borderColor: 'rgb(255, 99, 132)', // Line color for water
+                tension: 0.1 // Slight curve in the line
+            }]
+        },
+        options: {
+            aspectRatio: 1, // Ensures the chart maintains a square shape
+            scales: {
+                y: {
+                    beginAtZero: true,
+                    title: {
+                        display: true,
+                        text: 'Total Consumption'
+                    }
+                }
+            },
+            plugins: {
+                legend: {
+                    display: true,
+                    position: 'top'
+                },
+                title: {
+                    display: true,
+                    text: 'Total Consumption Overview', // Title for the chart
+                    padding: {
+                        top: 10,
+                        bottom: 30
+                    },
+                    font: {
+                        size: 16,
+                        weight: 'bold'
+                    }
+                }
+            },
+            responsive: true,
+            maintainAspectRatio: false // Allows flexibility in adjusting aspect ratio
+        }
+    });
   });
-});
+  
 
 
 let newDateFunction = new Date()
