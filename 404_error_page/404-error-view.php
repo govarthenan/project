@@ -13,7 +13,7 @@
         Page not found!
       </div>
       <div class="page-not-found-description">
-        We're sorry,the page you requested<br> could not be found.please go back<br> to the homepage!
+        We're sorry,the page you requested<br> could not be found.please go back<br> to the home page!
       </div>
       <div class="home-button">Home Page</div>
    </div>
