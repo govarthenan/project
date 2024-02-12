@@ -1,0 +1,72 @@
+:root {
+    --color_1: #f43c6e;
+    --color_2: #7ec4ff;
+    --color_3: #408dff;
+    --color_4: #154aaa;
+    --color_5: #4cc2c4;
+    --color_6: #ffff;
+    --color_7: #0c3866;
+    --color_8: rgba(135, 172, 202, 0.4);
+    --color_9: #073907;
+    --color_10:#9370db;
+    --color_11:#e3edf6;
+    --form_color:rgba(213, 235, 247, 0.50);
+  
+    --font_master: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+    --font_company_name: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+    --opacity_1: 55%;
+  }
+  
+  body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100vw;
+    display: flex;
+    font-family: var(--font_master);
+  }
+
+  .main-container-404{
+    background-color: var(--color_11);
+    height: 100vh;
+    width: 100vw;
+
+  }
+
+  .error-container-404-image{
+
+  }
+
+  .error-container-404{
+ 
+  }
+
+  .img-404{
+ height: 30%;
+ margin: 3% 10% 0% 40%;
+ height: 45%;
+  }
+
+  .page-not-found-heading{
+    font-size: 2.5rem;
+    margin: 0% 10% 2% 41%;
+    font-weight: bold;
+    color: var(--color_7);
+  }
+
+  .page-not-found-description{
+    font-size: 1.5rem;
+    margin: 0% 10% 2% 38.5%;
+    color: var(--color_4);
+  }
+
+  .home-button{
+    margin: 0% 45% 2% 44%;
+    font-size: 1.3rem;
+    color: var(--color_6);
+    background-color: var(--color_4);
+    align-items: center;
+    padding: 1% 2%;
+    border-radius: 5px;
+    font-weight: bold;
+  }
