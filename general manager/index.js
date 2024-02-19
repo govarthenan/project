@@ -14,7 +14,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 label: 'Total Water Consumption (Liters)', // Adjusted label for clarity
                 data: [1200, 1100, 1150, 1080, 1220, 1250], // Example data for water consumption
                 fill: false,
-                borderColor: 'rgb(255, 99, 132)', // Line color for water
+                borderColor: 'rgb(21, 74, 170)', // Line color for water
                 tension: 0.1 // Slight curve in the line
             }]
         },

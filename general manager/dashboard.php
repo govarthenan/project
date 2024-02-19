@@ -12,8 +12,8 @@ include('sidenav.php');
   <body onload="randerDate()">
   <div class="main-content">
     <div class="dashboard-container-general-manger">
-      <div class="first-column">
-        <div class="first-row">
+      <div class="first-column-dashboard-genral">
+        <div class="first-row-dashboard-genral">
           <div class="no-of-flats" >
             <div class="title-dashboard-tiles">Flats Overview</div>
             <div class="content-info-flat">
@@ -21,8 +21,8 @@ include('sidenav.php');
                 <img src="residential.png" class="resident-img">
               </div>
               <div class="flat-details">
-                 Total=150<br>
-                 Sold=120<br> 
+                 Total=<b>150</b><br>
+                 Sold=<b>120</b><br> 
               </div>
             </div>
           </div>
@@ -33,7 +33,7 @@ include('sidenav.php');
                   <img src="population.png" class="population-img">
                 </div>
                 <div class="flat-details">
-                 Total=540
+                 Total=<b>540</b>
                 </div>
               </div>
           </div>
@@ -44,17 +44,61 @@ include('sidenav.php');
                   <img src="teamwork.png" class="population-img">
                 </div>
                 <div class="flat-details">
-                 Total=18
+                 Total=<b>18</b>
                 </div>
               </div>
             </div>
           </div>
           
-          <div class="second-row">
-          
+          <div class="second-row-dashboard-genral">
+            <div class="sign-up-request-heading">Sign-Up Request</div>
+            <div class="sign-up-request-table">
+              <table class="sign-up-request">
+                <thead>
+                  <tr>
+                   <th>ID</th>
+                   <th>Username</th>
+                   <th>Email</th>
+                   <th>Status</th>
+                   <th>Actions</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>RE001</td>
+                    <td>Kavindu Kithmina</td>
+                    <td>kavindu123@gmail.com</td>
+                    <td></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td>RE002</td>
+                    <td>Kavindu Kithmina</td>
+                    <td>kavindu123@gmail.com</td>
+                    <td></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td>RE003</td>
+                    <td>Kavindu Kithmina</td>
+                    <td>kavindu123@gmail.com</td>
+                    <td></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td>RE004</td>
+                    <td>Kavindu Kithmina</td>
+                    <td>kavindu123@gmail.com</td>
+                    <td></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+             
           </div>
         </div>
-      <div class="second-column">
+      <div class="second-column-dashboard-genral">
       <div class="calendar">
             <div class="calendar-container">
               <div class="new-calendar-event">
