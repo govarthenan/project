@@ -167,7 +167,7 @@
   .column-1{
   margin: 1%;
   display: grid;
-  grid-template-rows: 1fr 2fr ;
+  grid-template-rows: 0.5fr 0.5fr 1.8fr ;
   }
 
   .column-2{
@@ -201,7 +201,8 @@ grid-template-columns: 1fr 1fr;
 }
 
 .finance-dashboard-titles-row-3{
-background-color: var(--color_6);
+display: grid;
+
 }
 
 .finance-overview-box-1{
@@ -234,17 +235,28 @@ background-color: var(--color_6);
 border-radius: 5px;
 margin-right: 2%;
 background-color: var(--color_6);
+margin-bottom: 2%;
+
 }
 
 .transaction-log{
 border-radius: 5px;
 background-color: var(--color_6);
+margin-bottom: 2%;
+
 }
+
+.payment-overview-maintenace-chart{
+  border-radius: 5px;
+  background-color: var(--color_6);
+ 
+}
+
 
 .finance-dash-tile-img{
   padding: 2%;
   background-color: var(--color_5);
-  margin: 3%;
+  margin: 5%;
   height: 20%;
   border-radius: 5px; 
 }
@@ -261,27 +273,48 @@ background-color: var(--color_6);
   vertical-align: middle;
 }
 
-.bank-fund,.emergancy-fund{
-  margin: 5%;
+.total-fund{
+  margin:1% 5%;
   color: var(--color_4);
-  font-size: 1.4rem;
-  text-align: justify;
+  font-size: 1.6rem;
+  text-align: right;
 }
 
-.elec-income,.water-income,.fine-income,.repair-expense{
-  margin: 4%;
+.total-income{
+  margin: 1% 5%;
   color: var(--color_4);
-  font-size: 1.4rem;
-  text-align: justify;
+  font-size: 1.6rem;
+  text-align: right;
+}
+
+.total-expense{
+  margin:1% 5%;
+  color: var(--color_4);
+  font-size: 1.6rem;
+  text-align: right; 
 }
 
 .non-routin-expenses-heading,.transaction-log-heading{
   margin: 2%;
-  color: var(--color_5);
+  color: var(--color_4);
   font-weight: bold;
   font-size: 1.1rem;
 }
 
+.payment-overview-maintenace-chart-heading{
+  margin: 2%;
+  color: var(--color_4);
+  font-weight: bold;
+  font-size: 1.1rem; 
+}
+
+.finance-document-heading{
+  margin: 2%;
+  color: var(--color_4);
+  font-weight: bold;
+  font-size: 1.1rem;  
+}
+/*
 .non-routin-expense {
   width: 96%;
   border-collapse: collapse;
@@ -316,6 +349,7 @@ tr:nth-child(even) {
 .wide-column {
   width: 20%; 
 }
+*/
   .calendar.calendar-container{
     background-color: var(--color_7);
     box-shadow: 0px 0px 15px 3px rgba(0, 0, 0, 0.2);

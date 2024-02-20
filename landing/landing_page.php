@@ -7,20 +7,20 @@
     <link rel="stylesheet" href="landing_style.css" />
 </head>
 <body>
-    <div class="main_container">
-        <div class="landing_description">
-            <div class="description_text">
+    <div class="main-container-landing">
+        <div class="landing-description">
+            <div class="description-text">
                 <div class="subtitle">
-                    Welcome to <span class="company_name">Harmony Homes</span> <br />
+                    Welcome to <span class="company-name">Harmony Homes</span> <br />
                     Where Convenience Meets Community!
                 </div>
-                <div class="welcome_message">
+                <div class="welcome-message">
                     <p>
                         Step into a world of convenience and community with Castle Care.<br />
                         More than just a platform, it's your key to a harmonious and connected<br />
                         living experience within your residence. Here, we simplify and elevate your<br />
                         residential living, transforming your home into a vibrant community.<br />
-                        Get ready to embrace a new era of effortless living with<span class="company_name">
+                        Get ready to embrace a new era of effortless living with<span class="company-name">
                             Harmony Homes!</span></p>
                 </div>
             </div>
@@ -38,14 +38,14 @@
               }
              }
             ?>
-                <form method="post" class="description_buttons">
+                <form method="post" class="description-buttons">
                     <button type="submit" name="login_button" class="login_button">Sign In&nbsp;<span>&rsaquo;</span></button>
                     <button type="submit" name="signup_button" class="signup_button">Sign Up&nbsp;<span>&rsaquo;</span></button>
                 </form>
             
         </div>
-        <div class="landing_graphics">
-            <img src="apartment.svg" class="landing_img" />
+        <div class="landing-graphics">
+            <img src="apartment.svg" class="landing-img" />
         </div>
     </div>
 </body>

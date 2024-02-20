@@ -19,7 +19,7 @@ include('sidenav.php');
          Welcome to our Support Center for the Flat Management System. We are dedicated to providing you with the assistance you need to ensure a seamless and enjoyable experience with our platform. Whether you have questions, concerns, or are facing any issues, our team is here to help. Please take advantage of the resources provided below to find the assistance you require.</p>
         </div>
           <div class="support-center-content">
-           <div class="column-1">
+           <div class="column-1-support">
              <div class="support-sub-heading">Contact Information:-</div>
              <ul>
                <li ><b>Phone Number:</b><i> +1 (555) 123-4567</i></li>
@@ -41,7 +41,7 @@ include('sidenav.php');
                                            After the login into the system for the first time, it is his/her responsibility to change the password interms of security concerns.
                 </div>
            </div>
-           <div class="column-2">
+           <div class="column-2-support">
            <div class="support-sub-heading">Technical Support:-</div>
              <ul>
               <li><b>Phone Number:</b><i>  +1 (555) 123-4567</i></li>

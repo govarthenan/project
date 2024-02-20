@@ -17,78 +17,35 @@ include('sidenav.php');
             <div class="finance-overview-box-1">
                <img src="money.png" class="finance-dash-tile-img">
                <span class="finance-dash-tile-heading">Current funds</span>
-               <div class="bank-fund">Bank=<b>Rs.2000k</b></div>
-               <div class="emergancy-fund">Emergancy=<b>Rs.200k</b></div>
+               <div class="total-fund"><b>Rs.2000k</b></div>
+               
             </div>
             <div class="finance-overview-box-2">
                <img src="income.png" class="finance-dash-tile-img">
                <span class="finance-dash-tile-heading">Income</span>
-               <div class="elec-income">Electricity=<b>Rs.1000k</b></div>
-               <div class="water-income">water=<b>Rs.900k</b></div>
-               <div class="fine-income">Fines=<b>Rs.20k</b></div>
+               <div class="total-income"><b>Rs.2000k</b></div>
             </div>
             <div class="finance-overview-box-3">
                <img src="decrease.png" class="finance-dash-tile-img">
                <span class="finance-dash-tile-heading">Expense</span>
-               <div class="repair-expense">Repair=<b>Rs.500k</b></div>
+               <div class="total-expense"><b>Rs.500k</b></div>
                
             </div>
          </div>
          <div class="finance-dashboard-titles-row-2">
               <div class="non-routin-expenses">
                 <div class="non-routin-expenses-heading">Non-Routine Expenses</div>
-                  <table class="non-routin-expense">
-                    <thead>
-                      <tr>
-                        <th>Payment ID</th>
-                        <th>Date</th>
-                        <th>About</th>
-                        <th class="wide-column">Action</th>
-                      </tr>
-                    </thead>
-                    <tbody>
-                      <tr>
-                        <td>P001</td>
-                        <td>2022-01-15</td>
-                        <td>Office Renovation</td>
-                        <td><button class="view-table">view</button></td>
-                      </tr>
-                      <tr>
-                        <td>P002</td>
-                        <td>2022-02-20</td>
-                        <td>New Equipment Purchase</td>
-                        <td><button class="view-table">view</button></td>
-                      </tr>
-                      <tr>
-                        <td>P003</td>
-                        <td>2022-02-20</td>
-                        <td>New Equipment Purchase</td>
-                        <td><button class="view-table">view</button></td>
-                      </tr>
-                      <tr>
-                        <td>P004</td>
-                        <td>2022-02-20</td>
-                        <td>New Equipment Purchase</td>
-                        <td><button class="view-table">view</button></td>
-                      </tr>
-                      <tr>
-                        <td>P005</td>
-                        <td>2022-02-20</td>
-                        <td>New Equipment Purchase</td>
-                        <td><button class="view-table">view</button></td>
-                      </tr>
-                      <tr>
-                        <td>P006</td>
-                        <td>2022-02-20</td>
-                        <td>New Equipment Purchase</td>
-                        <td><button class="view-table">view</button></td>
-                      </tr>
-                    </tbody>
-                  </table>
+                  
               </div> 
                <div class="transaction-log">
                <div class="transaction-log-heading">Transaction log</div>
                </div>
+         </div>
+         <div class="finance-dashboard-titles-row-3">
+          <div class="payment-overview-maintenace-chart">
+             <div class="payment-overview-maintenace-chart-heading">Maintenance Payment Overview</div>
+          </div>
+          
          </div>
          
       </div>

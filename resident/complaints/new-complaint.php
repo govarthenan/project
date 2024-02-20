@@ -25,15 +25,15 @@ include('sidenav.php');
                 </div>
               </div>
                 <div class="new-complaint-container">
-                <div class="column">
-            <div class="nested-grid">
-                <div class="form-column">
+                <div class="column-new-complaint">
+            <div class="nested-grid-new-complaint">
+                <div class="form-column-new-complaint">
                   <h4>Complaint type:</h4>
                 </div>
-                <div class="form-column">
+                <div class="form-column-new-complaint">
                   <h4>Subject:</h4>
                 </div>
-                <div class="form-column">
+                <div class="form-column-new-complaint">
                    <h4>Description:</h4>
                   </div>
                   
@@ -43,9 +43,10 @@ include('sidenav.php');
                 
             </div>
         </div>
-        <div class="column">
-            <div class="nested-grid">
-                <div class="form-column">
+        <div class="column-new-complaint">
+         <form name="complaintForm" method="post" class="new-complaint-form">
+            <div class="nested-grid-new-complaint">
+                <div class="form-column-new-complaint">
                 <select id="items" name="selectedItem">
             <option value="item1">Maintenance</option>
             <option value="item2">Security</option>
@@ -53,11 +54,11 @@ include('sidenav.php');
             <option value="item3">Other</option>
          </select>
                 </div>
-                <div class="form-column">
+                <div class="form-column-new-complaint">
                 <input type="text" id="shortAnswer" name="userShortAnswer" required>
                 </div>
 
-                <div class="form-column">
+                <div class="form-column-new-complaint">
                 <textarea id="answer" name="userAnswer" rows="8" required></textarea>
                 </div>
 
@@ -75,6 +76,7 @@ include('sidenav.php');
                </div>
                
             </div>
+          </form>
         </div>
           
 

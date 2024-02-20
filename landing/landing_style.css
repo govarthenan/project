@@ -19,7 +19,7 @@ body {
     font-family: var(--font_master);
 }
 
-.main_container {
+.main-container-landing {
     height: 100vh;
     width: 100vw;
     background-color: var(--color_1);
@@ -27,22 +27,22 @@ body {
     flex-direction: row;
 }
 
-.main_container .landing_description {
+.main-container-landing .landing-description {
     flex: 3;
     background-color: var(--color_7);
 }
 
-.main_container .landing_graphics {
+.main-container-landing .landing-graphics {
     flex: 2;
     background-color: var(--color_7);
 }
 
-.company_name {
+.company-name {
     font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
     color: var(--color_3);
 }
 
-.main_container .landing_description .description_text .subtitle {
+.main-container-landing .landing-description .description-text .subtitle {
     /* TODO: add font and fontsize */
     margin-top: 10%;
     margin-left: 10%;
@@ -51,7 +51,7 @@ body {
     font-size: 2.5rem;
 }
 
-.main_container .landing_description .description_text .welcome_message {
+.main-container-landing .landing-description .description-text .welcome-message {
     /* TODO: add font and fontsize */
     margin-top: 8%;
     margin-left: 10%;
@@ -61,7 +61,7 @@ body {
     font-size: 1.3rem;
 }
 
-.main_container .landing_description .description_buttons {
+.main-container-landing .landing-description .description-buttons {
     margin-top: 10%;
     display: flex;
     justify-content: center;
@@ -108,7 +108,7 @@ body {
     border-color: var(--color_6);
 }
 
-.landing_img {
+.landing-img {
     
     width: 90%;
     height: 80%;

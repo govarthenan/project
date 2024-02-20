@@ -93,7 +93,7 @@ input:-webkit-autofill:active {
   display: flex;
 }
 
-.btn {
+.btn-login {
   background-color:var(--color_7);
   color: var(--color_6);
   padding: 3%;
@@ -104,7 +104,7 @@ input:-webkit-autofill:active {
   font-weight: bold;
 }
 
-.btn:hover {
+.btn-login:hover {
   background-color: var(--color_5);
 }
 

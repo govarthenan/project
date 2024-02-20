@@ -1,4 +1,5 @@
-<?php?>
+<?php
+?>
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -38,7 +39,7 @@
                   }
               ?>
 
-            <form action="/submit-login" method="post">
+            <form action="/submit-login" method="post" class="login-form">
               <div class="sign-in-form-group">
                 <label for="username">Username:</label>
                 <input type="text" id="username" name="username" required>
@@ -50,7 +51,7 @@
               <div class="sign-in-form-group forgot-password">
               <a href="/forgot-password">Forgot Password?</a>
              </div>
-              <button type="submit" class="btn">Login</button>
+              <button type="submit" class="btn-login">Login</button>
             </form>
           </div>
         </div>
