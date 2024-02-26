@@ -134,3 +134,61 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 
 
+document.addEventListener('DOMContentLoaded', function() {
+    const ctx = document.getElementById('paymentStatusChart').getContext('2d');
+
+    // Plugin defined within the chart configuration to apply only to this chart
+    const percentagePlugin = {
+        id: 'percentagePlugin',
+        afterDatasetsDraw(chart) {
+            const ctx = chart.ctx;
+            chart.data.datasets.forEach((dataset, i) => {
+                const meta = chart.getDatasetMeta(i);
+                meta.data.forEach((bar, index) => {
+                    const data = dataset.data[index]; // Data value
+                    const total = dataset.data.reduce((sum, val) => sum + val, 0);
+                    const percentage = ((data / total) * 100).toFixed(1) + '%';
+                    ctx.fillStyle = '#000'; // Text color
+                    ctx.font = 'bold 14px Arial'; // Text font
+                    ctx.fillText(percentage, bar.tooltipPosition().x, bar.tooltipPosition().y - 10); // Position text above the segment
+                });
+            });
+        }
+    };
+
+    const paymentStatusChart = new Chart(ctx, {
+        type: 'pie',
+        data: {
+            labels: ['Paid', 'Not Paid'],
+            datasets: [{
+                label: 'Payment Status',
+                data: [70, 30], // Example data
+                backgroundColor: [
+                    'rgba(21, 74, 170,0.2)', // Color for "Paid"
+                    'rgba(76, 194, 196,0.2)' // Color for "Not Paid"
+                ],
+                borderColor: [
+                    'rgba(21, 74, 170, 1)',
+                    'rgba(76, 194, 196, 1)'
+                ],
+                borderWidth: 2
+            }]
+        },
+        options: {
+            responsive: true,
+            plugins: {
+                legend: {
+                    position: 'right',
+                },
+                title: {
+                    display: true,
+                    text: 'Monthly Payment Status',
+                },
+                tooltip: {
+                    enabled: true,
+                }
+            }
+        },
+        plugins: [percentagePlugin] // Apply the plugin only to this chart instance
+    });
+});

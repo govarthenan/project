@@ -91,7 +91,6 @@
   
   .profile-img{
   margin: 7% 45%;
-  
   }
   
   .dropdown {
@@ -167,7 +166,7 @@
   .column-1{
   margin: 1%;
   display: grid;
-  grid-template-rows: 0.5fr 0.5fr 1.8fr ;
+  grid-template-rows: 0.5fr 0fr 1.6fr ;
   }
 
   .column-2{
@@ -182,9 +181,9 @@
     border-radius: 5px; 
   }
 
-  .stat{
+  .stat-balance{
     background-color: var(--color_6);
-    margin-top: 2%;
+    margin: 1% 0% 1% 0%;
     border-radius: 5px;
   }
 
@@ -202,7 +201,7 @@ grid-template-columns: 1fr 1fr;
 
 .finance-dashboard-titles-row-3{
 display: grid;
-
+grid-template-columns: 1fr 1fr;
 }
 
 .finance-overview-box-1{
@@ -236,22 +235,35 @@ border-radius: 5px;
 margin-right: 2%;
 background-color: var(--color_6);
 margin-bottom: 2%;
-
+border-width: 3px;
+border-color: var(--color_5);
+border-style: solid;
+display: flex;
 }
 
+.non-routine-expense-icon{
+  background-color: var(--color_5);
+  height: 29%;
+  width: 6%;
+  margin: 4%;
+  padding: 1.5%;
+  border-radius: 3px;
+}
 .transaction-log{
 border-radius: 5px;
 background-color: var(--color_6);
 margin-bottom: 2%;
-
+border-width: 3px;
+border-color: var(--color_5);
+border-style: solid;
+display: flex;
 }
 
 .payment-overview-maintenace-chart{
   border-radius: 5px;
   background-color: var(--color_6);
- 
+  margin: 1% 2% 1% 0% ; 
 }
-
 
 .finance-dash-tile-img{
   padding: 2%;
@@ -295,8 +307,8 @@ margin-bottom: 2%;
 }
 
 .non-routin-expenses-heading,.transaction-log-heading{
-  margin: 2%;
-  color: var(--color_4);
+  margin: 4% 2%;
+  color: var(--color_5);
   font-weight: bold;
   font-size: 1.1rem;
 }
@@ -313,6 +325,12 @@ margin-bottom: 2%;
   color: var(--color_4);
   font-weight: bold;
   font-size: 1.1rem;  
+}
+
+.payment-status-chart{
+  width: 90%;
+  height: 80%;
+  margin: 5% 6%;
 }
 /*
 .non-routin-expense {

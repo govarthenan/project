@@ -34,17 +34,29 @@ include('sidenav.php');
          </div>
          <div class="finance-dashboard-titles-row-2">
               <div class="non-routin-expenses">
-                <div class="non-routin-expenses-heading">Non-Routine Expenses</div>
+                <img src="non-routine-expense.svg" class="non-routine-expense-icon">
+                <span class="non-routin-expenses-heading">Non-Routine Expenses</span>
                   
               </div> 
                <div class="transaction-log">
-               <div class="transaction-log-heading">Transaction log</div>
+               <img src="transaction-log.svg" class="non-routine-expense-icon">
+               <span class="transaction-log-heading">Transaction log</span>
                </div>
          </div>
          <div class="finance-dashboard-titles-row-3">
           <div class="payment-overview-maintenace-chart">
              <div class="payment-overview-maintenace-chart-heading">Maintenance Payment Overview</div>
+             <div class="payment-status-chart">
+                <canvas id="paymentStatusChart"></canvas>
+             </div>
           </div>
+          <div class="stat-balance">
+          <div class="payment-overview-maintenace-chart-heading">Maintenance Payment Overview</div>
+          <div class="payment-status-chart">
+          <canvas id="financeChart"></canvas>
+             </div>
+        
+        </div>
           
          </div>
          
@@ -84,9 +96,7 @@ include('sidenav.php');
             </div>
         </div>
         </div>
-        <div class="stat">
-        <canvas id="financeChart"></canvas>
-        </div>
+        
       </div>
         
     </div>
