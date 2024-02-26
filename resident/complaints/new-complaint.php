@@ -23,7 +23,7 @@ include('sidenav.php');
                   <img src="hand-held-tablet-writing.svg" class="new-complaint-img" />
                   <span class="complaint-type-title">New Complaint</span>
                 </div>
-              </div>
+              </div>              
                 <div class="new-complaint-container">
                 <div class="column-new-complaint">
             <div class="nested-grid-new-complaint">
