@@ -160,95 +160,88 @@
   .dashboard-container-finance{
     flex: 1;
     display: grid;
-    grid-template-columns:5fr 2fr ;
+    grid-template-rows:1r 3fr ;
+    height: 100vh;
   }
 
-  .column-1{
+  .row-1-finance-dashboard{
   margin: 1%;
   display: grid;
-  grid-template-rows: 0.5fr 0fr 1.6fr ;
+  grid-template-columns: 2.5fr 1fr ;
+ 
   }
 
-  .column-2{
-    margin: 2% 2% 2% 0%;
+  .row-2-finance-dashboard{
     display: grid;
-    grid-template-rows: 1.8fr 1.7fr;
+    grid-template-columns: 1fr 1fr;
+   
   }
 
-  .calendar{
-    background-color: var(--color_7);
-    user-select: none; 
-    border-radius: 5px; 
+  .row-1-column-1{
+  display: grid;
+  grid-template-rows: 1fr 0.7fr;
   }
 
-  .stat-balance{
-    background-color: var(--color_6);
-    margin: 1% 0% 1% 0%;
-    border-radius: 5px;
+  .row-1-column-2{
+    margin: 2% 2% 2% 2%;
+   background-color: var(--color_7);
+   border-radius: 10px;
   }
-
-.finance-dashboard-titles-row-1{
+  .row-1-box{
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  border-radius: 5px;
-}
+  }
+   
+  .row-2-box{
+    display: grid;
+    grid-template-columns: 1fr 1fr;  
+  }
+  
+  .finance-overview-box{
+    margin: 2%;
+    background-color: var(--color_6);
+    border-radius: 10px;
+    border-style: solid;
+    border-color: var(--color_5);
+    border-width: 2px;
+    display: flex;
+   
+  }
 
-.finance-dashboard-titles-row-2{
- border-radius: 5px;
-display: grid;
-grid-template-columns: 1fr 1fr;
-}
+  .non-routin-expenses,.transaction-log{
+    margin: 2%;
+    background-color: var(--color_6);
+    border-radius: 10px;
+    border-style: solid;
+    border-color: var(--color_5);
+    border-width: 2px;
+    display: flex;
+    align-items: center; 
+  }
 
-.finance-dashboard-titles-row-3{
-display: grid;
-grid-template-columns: 1fr 1fr;
-}
+  .box-c{
+    margin: 0% 2% 2% 3.6%;
+    background-color: var(--color_6);
+    border-radius: 10px; 
+  }
 
-.finance-overview-box-1{
-  background-color: var(--color_6);
-  margin-bottom: 3%;
-  margin-right: 3%;
-  border-radius: 5px;
-  border-style: solid;
-  border-color: var(--color_5);
-}
+  .box-d{
+    margin: 0% 2% 2% 1%;
+    background-color: var(--color_6); 
+    border-radius: 10px;
+  }
+ 
 
-.finance-overview-box-2{
-  background-color: var(--color_6);
-  margin-bottom: 3%;
-  margin-right: 3%;
-  border-radius: 5px;
-  border-style: solid;
-  border-color: var(--color_5);
-}
-
-.finance-overview-box-3{
-  background-color: var(--color_6);
-  margin-bottom: 3%;
-  border-radius: 5px;
-  border-style: solid;
-  border-color: var(--color_5);
-}
-
-.non-routin-expenses{
-border-radius: 5px;
-margin-right: 2%;
-background-color: var(--color_6);
-margin-bottom: 2%;
-border-width: 3px;
-border-color: var(--color_5);
-border-style: solid;
-display: flex;
-}
 
 .non-routine-expense-icon{
   background-color: var(--color_5);
-  height: 29%;
-  width: 6%;
+  height: 22%;
+  width: 8%;
   margin: 4%;
-  padding: 1.5%;
-  border-radius: 3px;
+  padding: 1.5% 1%;
+  border-radius: 8px;
 }
+
 .transaction-log{
 border-radius: 5px;
 background-color: var(--color_6);
@@ -257,6 +250,7 @@ border-width: 3px;
 border-color: var(--color_5);
 border-style: solid;
 display: flex;
+border-width: 2px;
 }
 
 .payment-overview-maintenace-chart{
@@ -266,48 +260,30 @@ display: flex;
 }
 
 .finance-dash-tile-img{
-  padding: 2%;
-  background-color: var(--color_5);
-  margin: 5%;
-  height: 20%;
-  border-radius: 5px; 
+ background-color: var(--color_5); 
+ height: 20%;
+ margin: 4%; 
+ padding: 2%;
+ border-radius: 10px;
+ 
 }
 
 .finance-dash-tile-heading{
   color: var(--color_5);
-  font-size: 1.5rem;
-  margin-top: 2%;
+  font-size: 1.2rem;
   font-weight: bold;
+  margin: 10% 5% ;
 }
 
-.finance-dash-tile-img, .finance-dash-tile-heading {
-  display: inline-block;
-  vertical-align: middle;
-}
-
-.total-fund{
-  margin:1% 5%;
+.total-fund,.total-income,.total-expense{
+  margin: 10% 5% 0%;
   color: var(--color_4);
-  font-size: 1.6rem;
+  font-size: 1.8rem;
   text-align: right;
-}
-
-.total-income{
-  margin: 1% 5%;
-  color: var(--color_4);
-  font-size: 1.6rem;
-  text-align: right;
-}
-
-.total-expense{
-  margin:1% 5%;
-  color: var(--color_4);
-  font-size: 1.6rem;
-  text-align: right; 
 }
 
 .non-routin-expenses-heading,.transaction-log-heading{
-  margin: 4% 2%;
+  margin: 7% 1%;
   color: var(--color_5);
   font-weight: bold;
   font-size: 1.1rem;
@@ -327,53 +303,29 @@ display: flex;
   font-size: 1.1rem;  
 }
 
-.payment-status-chart{
-  width: 90%;
-  height: 80%;
-  margin: 5% 6%;
-}
-/*
-.non-routin-expense {
-  width: 96%;
-  border-collapse: collapse;
-  margin:3% 2%;
-}
-th, td {
-  border: 1px solid var(--color_2);
-  padding: 2%;
-  text-align: left;
-  color: var(--color_4);
-}
-th {
-  background-color: var(--color_11);
-  color: var(--color_7);
-}
-tr:nth-child(even) {
-  background-color: var(--color_11);
+.payment-status-chart-1{
+
+
 }
 
-.view-table{
-  background-color: var(--color_2);
-  padding: 5% 15% ;
-  margin: 10%;
-  border-color: var(--color_7);
-  border-style: solid;
-  border-width: 1px;
-  font-family: var(--font_master);
-  color: var(--color_4);
-  border-radius: 5px;
-}
+.payment-status-chart-2{
+ height: 85%;
+  
+ }
 
-.wide-column {
-  width: 20%; 
+
+.calendar{
+  background-color: var(--color_7);
+  user-select: none; 
+  border-radius: 10px; 
 }
-*/
   .calendar.calendar-container{
     background-color: var(--color_7);
     box-shadow: 0px 0px 15px 3px rgba(0, 0, 0, 0.2);
     font-family: "Roboto", sans-serif;
     overflow: hidden;
     height: 50%;
+   
   }
   
   .calendar-container .month{
@@ -385,6 +337,7 @@ tr:nth-child(even) {
     color: var(--color_6);
     padding: 0% 8% ;
     text-align: center;
+    border-radius: 10px;
   }
   
   .month h2{

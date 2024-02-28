@@ -12,61 +12,37 @@ include('sidenav.php');
   <body onload="randerDate()">
   <div class="main-content">
     <div class="dashboard-container-finance">
-      <div class="column-1">
-         <div class="finance-dashboard-titles-row-1">
-            <div class="finance-overview-box-1">
+    <div class="row-1-finance-dashboard">
+      <div class="row-1-column-1">
+        <div class="row-1-box">
+           <div class="finance-overview-box">
                <img src="money.png" class="finance-dash-tile-img">
-               <span class="finance-dash-tile-heading">Current funds</span>
-               <div class="total-fund"><b>Rs.2000k</b></div>
-               
-            </div>
-            <div class="finance-overview-box-2">
-               <img src="income.png" class="finance-dash-tile-img">
-               <span class="finance-dash-tile-heading">Income</span>
-               <div class="total-income"><b>Rs.2000k</b></div>
-            </div>
-            <div class="finance-overview-box-3">
-               <img src="decrease.png" class="finance-dash-tile-img">
-               <span class="finance-dash-tile-heading">Expense</span>
-               <div class="total-expense"><b>Rs.500k</b></div>
-               
-            </div>
-         </div>
-         <div class="finance-dashboard-titles-row-2">
-              <div class="non-routin-expenses">
-                <img src="non-routine-expense.svg" class="non-routine-expense-icon">
-                <span class="non-routin-expenses-heading">Non-Routine Expenses</span>
-                  
-              </div> 
-               <div class="transaction-log">
-               <img src="transaction-log.svg" class="non-routine-expense-icon">
-               <span class="transaction-log-heading">Transaction log</span>
-               </div>
-         </div>
-         <div class="finance-dashboard-titles-row-3">
-          <div class="payment-overview-maintenace-chart">
-             <div class="payment-overview-maintenace-chart-heading">Maintenance Payment Overview</div>
-             <div class="payment-status-chart">
-                <canvas id="paymentStatusChart"></canvas>
+               <span class="finance-dash-tile-heading">Current funds<br> <div class="total-fund"><b>Rs.2000k</b></div></span>
              </div>
-          </div>
-          <div class="stat-balance">
-          <div class="payment-overview-maintenace-chart-heading">Maintenance Payment Overview</div>
-          <div class="payment-status-chart">
-          <canvas id="financeChart"></canvas>
-             </div>
-        
+           <div class="finance-overview-box">
+           <img src="income.png" class="finance-dash-tile-img">
+               <span class="finance-dash-tile-heading">Income<br> <div class="total-income"><b>Rs.2000k</b></div></span>
+           </div>
+           <div class="finance-overview-box">
+           <img src="decrease.png" class="finance-dash-tile-img">
+               <span class="finance-dash-tile-heading">Expense<br> <div class="total-expense"><b>Rs.500k</b></div></span>
+           </div>
         </div>
-          
-         </div>
-         
+        <div class="row-2-box">
+          <div class="non-routin-expenses">
+            <img src="non-routine-expense.svg" class="non-routine-expense-icon">
+            <span class="non-routin-expenses-heading">Non-Routine Expenses</span>
+          </div>
+          <div class="transaction-log">
+            <img src="transaction-log.svg" class="non-routine-expense-icon">
+            <span class="transaction-log-heading">Transaction log</span>
+          </div>
+        </div>
       </div>
-      <div class="column-2">
+      <div class="row-1-column-2">
         <div class="calendar">
-        <div class="calendar-container">
-              <div class="new-calendar-event">
-                + Add new event
-              </div>
+          <div class="calendar-container">
+              
               <div class="month">
                <div class="prev" onclick="moveDate('prev')">
                 <span class="arrow">&#10094</span>
@@ -94,10 +70,24 @@ include('sidenav.php');
             
             <div class="dates">
             </div>
+          </div>
         </div>
-        </div>
-        
       </div>
+    </div>
+    <div class="row-2-finance-dashboard">
+      <div class="box-c">
+      <div class="payment-overview-maintenace-chart-heading">Maintenance Payment Overview</div>
+             <div class="payment-status-chart-1">
+                
+             </div>
+      </div>
+      <div class="box-d">
+      <div class="payment-overview-maintenace-chart-heading">Accounts Overview</div>
+          <div class="payment-status-chart-2">
+          <canvas id="financeChart"></canvas>
+      </div>
+    </div>
+
         
     </div>
   </div>
